@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*****************************************
+  *----------------------------------
+  |  ThisStyleVersion: 1.1        |
+  |  © 2021-2023 By Pusyuu        |
+  |  LastUpdate: 2023-02-08       |
+  |  ・。・ﾌﾟｼｭｰ・・・。          |
+----------------------------------*
+******************************************/
+
+/* 色、模様、サイズ調整部
+---------------------------------*/
+
+button {
+  margin: 10px;
+  background-color: #00ff00;
+  font-size: 20px;
+}
+
+p {
+ color: #FFF;
+}
+h1 {
+ color: #FF00F0;
+}
+h2 {
+  color: #000000;
+}
+
+h3 {
+  color: #00bfff;
+}
+
+table {
+  margin: 10px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid green;
+}
+
+th {
+  border: 1px solid green;
+  padding: 5px;
+}
+
+tr {
+   border: 1px ridge;
+}
+
+td {
+  border: 1px solid green;
+  padding: 5px;
+}
+
+.bokasi {
+  background-color: rgba(150, 150, 150, 0.2); /* 背景色 */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 20px rgba(255, 152, 79, 0.5); /* 薄い影 */
+  margin: 10%
+}
+.bokasi p ,h1 ,h2 ,h3 {
+  margin:10px;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+/* プロフィール調整部
+---------------------------------*/
+
+.avator_image {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.avator_image_center {
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  background-color: #FFF;
+  border-radius: 20px;
+  margin-left: 15px;
+  margin-right: 15px; 
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  justify-content: center;
+  align-items: center;
+.example {
+  display: block;
+  width: 100px;
+}
+}
+
+/* レスポンシブ調整部
+---------------------------------*/
+
+@media only screen and (max-width:999px){
+.bokasi {
+  margin: 10%
+
+}
+.bokasi p ,h1 ,h2 ,h3 {
+  padding: 10px;
+}
+
+.profile {
+  border-radius: 15px;
+}
+
+}
