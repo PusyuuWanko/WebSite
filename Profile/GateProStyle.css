@@ -12,9 +12,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 1.1        |
+  |  ThisStyleVersion: 2.0        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-02-08       |
+  |  LastUpdate: 2023-02-16       |
   |  ・。・ﾌﾟｼｭｰ・・・。          |
 ----------------------------------*
 ******************************************/
@@ -26,6 +26,10 @@ button {
   margin: 10px;
   background-color: #00ff00;
   font-size: 20px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #fff;
 }
 
 p {
@@ -63,6 +67,10 @@ td {
   padding: 5px;
 }
 
+li {
+  list-style: none;
+}
+
 .bokasi {
   background-color: rgba(150, 150, 150, 0.2); /* 背景色 */
   border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
@@ -79,7 +87,10 @@ td {
 
 a {
   text-decoration: none;
-  color: yellow;
+  color: #80ff00;
+}
+a:hover {
+  color: green;
 }
 
 /* プロフィール調整部
@@ -94,39 +105,33 @@ a {
   display: flex;
   justify-content: center;
 }
-.avator_image_center {
+.center {
   display: flex;
   justify-content: center;
 }
-.profile {
-  background-color: #FFF;
+.profile_component {
+  background-color: rgba(250,255,255,0.7);
   border-radius: 20px;
-  margin-left: 15px;
-  margin-right: 15px; 
+  margin: 10px;
   overflow: hidden;
   display: flex;
   box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
   justify-content: center;
   align-items: center;
-.example {
-  display: block;
-  width: 100px;
+  width: 40vw;
+  height: auto;
 }
+.profile {
+  display: block;
 }
 
 /* レスポンシブ調整部
 ---------------------------------*/
 
-@media only screen and (max-width:999px){
-.bokasi {
-  margin: 10%
+@media only screen and (max-width:650px){
 
-}
-.bokasi p ,h1 ,h2 ,h3 {
-  padding: 10px;
-}
-
-.profile {
+.profile_component {
+  width: auto;
   border-radius: 15px;
 }
 
