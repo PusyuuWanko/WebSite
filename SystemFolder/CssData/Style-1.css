@@ -12,9 +12,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 10.4       |
+  |  ThisStyleVersion: 10.6       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-02-07       |
+  |  LastUpdate: 2023-02-16       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・。      |
 ----------------------------------*
 ******************************************/
@@ -30,6 +30,24 @@ p  {color: #ffffff; }
 th {color: #00ff00; }
 td {color: #00ff00; }
 li {color: #FFFFFF; }
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  color: #000;
+  background: #00d5ff;
+}
+button:hover {
+  color: #fff;
+  background: #00aacc;
+}
+
+a {
+  color: #fff000;
+}
+a:hover {
+  color: #ff5500;
+}
 
 h2 {
   color: #77ff33;
@@ -432,7 +450,7 @@ textarea {
 
 .service_card_info {
   padding: 5px 10px;
-  height: 200px;
+  height: 300px;
 }
 
 .service_card_time {
@@ -493,7 +511,7 @@ textarea {
 
 .blog_card_info {
   padding: 5px 10px;
-  height: 150px;
+  height: 250px;
 }
 
 .blog_card_time {
@@ -763,7 +781,7 @@ ul li:hover {
 /* レスポンシブ化調整部
 ----------------------------------------------------*/
 
-@media only screen and (max-width:999px){
+@media only screen and (max-width:650px){
 
 /* ハンバーガーメニュー、ボタン調整部
 ----------------------------------------------------*/
