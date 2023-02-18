@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 0.3        |
+  |  ThisStyleVersion: 0.4        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-01-30       |
+  |  LastUpdate: 2023-02-18       |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
 ******************************************/
@@ -67,8 +67,8 @@ var validate = function() {
 
 var errorElement = function(form, msg) {
 	form.className = "error-form";
-	var newElement = document.createElement("div");
-	newElement.className = "error";
+	var newElement = document.createElement("p");
+	newElement.className = "form_error";
 	var newText = document.createTextNode(msg);
 	newElement.appendChild(newText);
 	form.parentNode.insertBefore(newElement, form.nextSibling);
