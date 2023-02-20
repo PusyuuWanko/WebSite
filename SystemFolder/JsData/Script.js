@@ -19,30 +19,30 @@ var validate = function() {
 
 	// お名前の入力をチェック
 	if(document.form.name.value == ""){
-		errorElement(document.form.name, "お名前が入力されていません");
+		errorElement(document.form.name, "お名前が入力されていません。");
 		flag = false;
 	}
 
 	// ふりがなの入力をチェック
 	if(document.form.furigana.value == ""){
-		errorElement(document.form.furigana, "ふりがなが入力されていません");
+		errorElement(document.form.furigana, "ふりがなが入力されていません。");
         	flag = false;
 	} else {
 		// メールアドレスの形式をチェック
 		if(!validateKana(document.form.furigana.value)){
-			errorElement(document.form.furigana, "ひらがな以外の文字が入っています");
+			errorElement(document.form.furigana, "ひらがな以外の文字が入っています。");
             			flag = false;
 		}
 	}
 
 	// メールアドレスの入力をチェック
 	if(document.form.email.value == ""){
-		errorElement(document.form.email, "メールアドレスが入力されていません");
+		errorElement(document.form.email, "メールアドレスが入力されていません。");
 		flag = false;
 	} else {
 		// メールアドレスの形式をチェック
 		if(!validateMail(document.form.email.value)){
-			errorElement(document.form.email, "メールアドレスが正しくありません");
+			errorElement(document.form.email, "メールアドレスが正しくありません。");
 			flag = false;
 		}
 	}
@@ -50,13 +50,13 @@ var validate = function() {
 
 	// お問い合わせ項目の選択をチェック
 	if(document.form.item.value == ""){
-		errorElement(document.form.item, "お問い合わせ項目が選択されていません");
+		errorElement(document.form.item, "お問い合わせ項目が選択されていません。");
 		flag = false;
 	}
 
 	// お問い合わせ内容の入力をチェック
 	if(document.form.content.value == ""){
-		errorElement(document.form.content, "お問い合わせ内容が入力されていません");
+		errorElement(document.form.content, "お問い合わせ内容が入力されていません。");
 		flag = false;
 	}
 
@@ -67,7 +67,7 @@ var validate = function() {
 
 var errorElement = function(form, msg) {
 	form.className = "error-form";
-	var newElement = document.createElement("p");
+	var newElement = document.createElement("hr");
 	newElement.className = "form_error";
 	var newText = document.createTextNode(msg);
 	newElement.appendChild(newText);
