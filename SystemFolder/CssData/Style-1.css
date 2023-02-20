@@ -538,7 +538,7 @@ textarea {
 
 .blog_card_info {
   padding: 5px 10px;
-  height: 250px;
+  height: 300px;
 }
 
 .blog_card_time {
@@ -787,7 +787,7 @@ ul li:hover {
 /* レスポンシブ化調整部
 ----------------------------------------------------*/
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:750px){
 
 /* ハンバーガーメニュー、ボタン調整部
 ----------------------------------------------------*/
