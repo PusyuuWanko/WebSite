@@ -87,10 +87,10 @@ li {
 
 a {
   text-decoration: none;
-  color: #80ff00;
+  color: #0000ff;
 }
 a:hover {
-  color: green;
+  color: #00e600;
 }
 
 /* プロフィール調整部
