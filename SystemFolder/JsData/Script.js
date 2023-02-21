@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 0.5        |
+  |  ThisStyleVersion: 0.6        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-02-19       |
+  |  LastUpdate: 2023-02-22       |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
 ******************************************/
@@ -14,7 +14,7 @@ var validate = function() {
 
 	var flag = true;
 
-	removeElementsByClass("error");
+	removeElementsByClass("error-info");
 	removeClass("error-form");
 
 	// お名前の入力をチェック
@@ -67,8 +67,8 @@ var validate = function() {
 
 var errorElement = function(form, msg) {
 	form.className = "error-form";
-	var newElement = document.createElement("hr");
-	newElement.className = "form_error";
+	var newElement = document.createElement("div");
+	newElement.className = "error-info";
 	var newText = document.createTextNode(msg);
 	newElement.appendChild(newText);
 	form.parentNode.insertBefore(newElement, form.nextSibling);

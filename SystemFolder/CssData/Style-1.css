@@ -444,8 +444,14 @@ section {
   margin: 10px;
 }
 
-.form_error {
+.error-form {
   color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.error-info {
+  color: #fff000;
+  border: 1px solid #fff000;
 }
 
 textarea {
