@@ -12,9 +12,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 11.0       |
+  |  ThisStyleVersion: 11.1       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-02-19       |
+  |  LastUpdate: 2023-02-22       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・。      |
 ----------------------------------*
 ******************************************/
@@ -22,7 +22,7 @@ body {
 /* 色、模様、サイズ、調整部
 ----------------------------------------------------*/
 
-h1 {color: #ff00ff;}
+h1 {color: #7fffd4;}
 //h2 {color: #ffffff;}
 h3 {color: #fff000;}
 h4 {color: #0fffff;}
@@ -415,7 +415,7 @@ section {
 ----------------------------------------------------*/
 
 .profile {
-  background-color: #0099cc;
+  background-color: #0059b3;
   width: 50vw;
   padding: 10px;
   border-radius: 10px;
@@ -450,8 +450,8 @@ section {
 }
 
 .error-info {
-  color: #fff000;
-  border: 1px solid #fff000;
+  color: #ff0000;
+  border: 1px solid #ff0000;
 }
 
 textarea {
