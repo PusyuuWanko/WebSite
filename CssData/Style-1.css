@@ -121,76 +121,76 @@ color:#e6e6e6; margin: auto;
 }
 @keyframes flash {
   0%,33%,66%,100%{
-    opacity: 0;
+  opacity: 0;
 }
-  12%{
-color:#ff5353;
-opacity: 1;
+12%{
+  color:#ff5353;
+  opacity: 1;
 }
-  24%{
-color:#ffcf53;
-opacity: 1;
+24%{
+  color:#ffcf53;
+  opacity: 1;
 }
-  36%{
-color:#e8ff53;
-opacity: 1;
+36%{
+  color:#e8ff53;
+  opacity: 1;
 }
-  48%{
-color:#53ff5d;
-opacity: 1;
+48%{
+  color:#53ff5d;
+  opacity: 1;
 }
-  60%{
-color:#53ffbc;
-opacity: 1;
+60%{
+  color:#53ffbc;
+  opacity: 1;
 }
-  72%{
-color:#5393ff;
-opacity: 1;
+72%{
+  color:#5393ff;
+  opacity: 1;
 }
   84%{
 color:#ca53ff;
 opacity: 1;
 }
-  100%{
-color:#ff53bd;
-opacity: 1;
+100%{
+  color:#ff53bd;
+  opacity: 1;
 }
 }
 @-webkit-keyframes flash {
   0%,33%,66%,100%{
-    opacity: 0;
+  opacity: 0;
 }
-  12%{
-color:#ff5353;
-opacity: 1;
+12%{
+  color:#ff5353;
+  opacity: 1;
 }
-  24%{
-color:#ffcf53;
-opacity: 1;
+24%{
+  color:#ffcf53;
+  opacity: 1;
 }
-  36%{
-color:#e8ff53;
-opacity: 1;
+36%{
+  color:#e8ff53;
+  opacity: 1;
 }
-  48%{
-color:#53ff5d;
-opacity: 1;
+48%{
+  color:#53ff5d;
+  opacity: 1;
 }
-  60%{
-color:#53ffbc;
-opacity: 1;
+60%{
+  color:#53ffbc;
+  opacity: 1;
 }
-  72%{
-color:#5393ff;
-opacity: 1;
+72%{
+  color:#5393ff;
+  opacity: 1;
 }
   84%{
 color:#ca53ff;
 opacity: 1;
 }
-  100%{
-color:#ff53bd;
-opacity: 1;
+100%{
+  color:#ff53bd;
+  opacity: 1;
 }
 }
 
@@ -940,9 +940,13 @@ ul li:hover {
 ----------------------------------------------------*/
 
 .show > strong {
-    font-size: 30px;
-    color: #fff;
-    font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.show > .scroll {
+  bottom: 185px;
 }
 
 /* sm tb版 ナビゲーションバー調整部
