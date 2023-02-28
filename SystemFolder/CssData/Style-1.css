@@ -749,8 +749,8 @@ textarea {
   border: solid 2px #ff5500;
   border-radius: 5px;
   overflow: hidden;
-  width: 21vw;
-  height: 24vh;
+  width: 150px;
+  height: 150px;
 }
 
 .photo_box-2 {
@@ -759,28 +759,28 @@ textarea {
   border: solid 2px #b3ffff;
   border-radius: 5px;
   overflow: hidden;
-  width: 21vw;
-  height: 24vh;
+  width: 150px;
+  height: 150px;
 }
 
 .photo_box_no_dodai-1 {
   padding: 0.5em 1em;
   margin: 10px;
   border-radius: 10px;
-  background-color: #3dcccc;
-  width: 22vw;
+  background-color: #66bbcc;
+  width: 21vw;
 }
 
 .photo_box_no_dodai-2 {
   padding: 0.5em 1em;
   margin: 10px;
   border-radius: 10px;
-  background-color: #ff4d4d;
-  width: 22vw;
+  background-color: #ff7c4d;
+  width: 21vw;
 }
 
 .photo_box_message {
-  height: 300px;
+  height: 350px;
 }
 
 .photo_box_yokoori {
