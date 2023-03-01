@@ -536,7 +536,7 @@ textarea {
 
 .service_card {
   padding: 0 10px;
-  width: 23vw;
+  width: 22vw;
   height: auto;
   margin-bottom: 15px;
 }
@@ -581,7 +581,7 @@ textarea {
 
 .blog_card {
   padding: 0 10px;
-  width: 23vw;
+  width: 22vw;
   height: auto;
   margin-bottom: 15px;
 }
@@ -749,7 +749,7 @@ textarea {
   border: solid 2px #ff5500;
   border-radius: 5px;
   overflow: hidden;
-  width: 250px;
+  width: 181px;
   height: 150px;
 }
 
@@ -759,7 +759,7 @@ textarea {
   border: solid 2px #b3ffff;
   border-radius: 5px;
   overflow: hidden;
-  width: 250px;
+  width: 181px;
   height: 150px;
 }
 
@@ -768,7 +768,7 @@ textarea {
   margin: 10px;
   border-radius: 10px;
   background-color: #66bbcc;
-  width: 20vw;
+  width: 19vw;
 }
 
 .photo_box_no_dodai-2 {
@@ -776,7 +776,7 @@ textarea {
   margin: 10px;
   border-radius: 5px;
   background-color: #ff7d66;
-  width: 20vw;
+  width: 19vw;
 }
 
 .photo_box_message {
