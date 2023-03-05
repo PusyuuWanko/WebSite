@@ -251,7 +251,8 @@ section {
 -----------------------------------------------------------------*/
 
 .show {
-  height: 100svh;
+  height: 100dvh;
+  width: 100dvw;
   position: relative;
   overflow: hidden;
 }
@@ -272,7 +273,7 @@ section {
 
 .show > .scroll {
   font-weight: 900;position:absolute;
-  bottom: 120px;
+  bottom: 90px;
   left: 50%;
   z-index: 3;
   width: 60px;
