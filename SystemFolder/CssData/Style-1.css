@@ -251,7 +251,7 @@ section {
 -----------------------------------------------------------------*/
 
 .show {
-  height: 100vh;
+  height: 100svh;
   position: relative;
   overflow: hidden;
 }
