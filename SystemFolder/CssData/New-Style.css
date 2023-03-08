@@ -1,0 +1,1218 @@
+@charset "UTF-8";
+
+body {
+  background-image: url("0.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/*****************************************
+  *----------------------------------
+  |  ThisStyleVersion: 11.8       |
+  |  © 2021-2023 By Pusyuu        |
+  |  LastUpdate: 2023-03-09       |
+  |  ・。・ﾌﾟｼｭｰ㌨？・・・。      |
+----------------------------------*
+******************************************/
+
+/* 色、模様、サイズ、調整部
+-----------------------------------------------------------------*/
+
+h1 {color: #7fffd4;}
+//h2 {color: #ffffff;}
+h3 {color: #158000;}
+h4 {color: #0fffff;}
+p  {color: #ffffff;}
+th {color: #00ff00;}
+td {color: #00ff00;}
+li {color: #FFFFFF;}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  color: #000;
+  background: #00d5ff;
+  transition: background 0.3s;
+  transition: color 0.3s;
+}
+button:hover {
+  color: #fff;
+  background: #00aacc;
+}
+
+a {
+  color: #4000ff;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #ff5500;
+}
+
+h2 {
+  color: #77ff33;
+  padding:5px;
+  border-bottom: 1px solid #993300;
+  border-left: 3px solid #ff4dff;
+}
+
+//h2 {
+  background: -webkit-linear-gradient(left, #ff00ff, #00ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+//h2:after {
+  content: "";
+  display: block;
+  width: 100%; height: 2px;
+  background-image: -webkit-linear-gradient(left, #ff00ff, #00ff00);
+  background-image: -ms-linear-gradient(left, #ff00ff, #00ff00);
+}
+
+//h2 {
+  font-size: 2em;
+  text-aligin: center;
+  line-height: 0.95em;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 0 0 0.10em #2962FF, 0 0 0.15em #2962FF, 0 0 0.80em #2962FF, 0 0 1.00em #2962FF; 
+}
+
+.senn-1 {
+  height: 5px;
+  width: 80%;
+  background-color: #aaff00;
+  border: none;
+}
+
+.senn-2 {
+  height: 5px;
+  width: 60%;
+  background-color: black;
+  border: none;
+}
+
+.marukado_waku {
+  border: solid 2px skyblue;
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 2.3em;
+  possition: relative;
+}
+
+.kiyaku {
+  color: #00ff33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.Copyright {
+color:#e6e6e6; margin: auto;
+}
+
+.text {
+  animation: flash 5s linear infinite;
+  webkit-animation: flash 1s linear infinite;
+}
+@keyframes flash {
+  0%,33%,66%,100%{
+  opacity: 0;
+}
+12%{
+  color:#ff5353;
+  opacity: 1;
+}
+24%{
+  color:#ffcf53;
+  opacity: 1;
+}
+36%{
+  color:#e8ff53;
+  opacity: 1;
+}
+48%{
+  color:#53ff5d;
+  opacity: 1;
+}
+60%{
+  color:#53ffbc;
+  opacity: 1;
+}
+72%{
+  color:#5393ff;
+  opacity: 1;
+}
+  84%{
+color:#ca53ff;
+opacity: 1;
+}
+100%{
+  color:#ff53bd;
+  opacity: 1;
+}
+}
+@-webkit-keyframes flash {
+  0%,33%,66%,100%{
+  opacity: 0;
+}
+12%{
+  color:#ff5353;
+  opacity: 1;
+}
+24%{
+  color:#ffcf53;
+  opacity: 1;
+}
+36%{
+  color:#e8ff53;
+  opacity: 1;
+}
+48%{
+  color:#53ff5d;
+  opacity: 1;
+}
+60%{
+  color:#53ffbc;
+  opacity: 1;
+}
+72%{
+  color:#5393ff;
+  opacity: 1;
+}
+  84%{
+color:#ca53ff;
+opacity: 1;
+}
+100%{
+  color:#ff53bd;
+  opacity: 1;
+}
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+}
+
+th {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+tr {
+  border: 1px ridge;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+}
+
+.avater {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.avater_image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding:10px;
+}
+
+/* SHOW調整部 
+-----------------------------------------------------------------*/
+
+.show {
+  height: 100dvh;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  margin-left: 250px;
+}
+
+.show > strong {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.show > .scroll {
+  font-weight: 900;position:absolute;
+  bottom: 90px;
+  left: 50%;
+  z-index: 3;
+  width: 60px;
+  margin-left: -30px;
+  padding-bottom: 40px;
+  color: #00ff00;
+  font-size: 11px;
+  text-align: center
+}
+
+.show > .scroll .arw {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left:50%; bottom:0;width:9px;
+  height:30px; background:url(./scroll.svg) no-repeat center center
+}
+
+.show > .scroll .arw:after {
+  -moz-animation: scroll 1s linear 0s infinite normal;
+  -webkit-animation: scroll 1s linear 0s infinite normal;
+  animation: scroll 1s linear 0s infinite normal;
+  content: '';display:block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 1px;
+  height: 5px;
+  background: #00ff00;
+}
+
+@-webkit-keyframes scroll{
+  0%{top:-5px}
+  75%{top:-5px}
+  100%{top:30px}
+}
+
+@-moz-keyframes scroll{
+  0%{top:-5px}
+  75%{top:-5px}
+  100%{top:30px}
+}
+
+@-o-keyframes scroll{
+  0%{top:-5px}
+  75%{top:-5px}
+  100%{top:30px}
+}
+
+@-ms-keyframes scroll{
+  0%{top:-5px}
+  75%{top:-5px}
+  100%{top:30px}
+}
+
+@keyframes scroll{
+  0%{top:-5px}
+  75%{top:-5px}
+  100%{top:30px}
+}
+
+.show video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  filter: blur(8px);
+}
+
+.show img {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  filter: blur(10px);
+}
+
+/* ヘッダー調整部
+-----------------------------------------------------------------*/
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #18aecc;
+  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  z-index: 999;
+}
+
+/* ヘッダー上のナビゲーション調整部
+-----------------------------------------------------------------*/
+
+.header_nav {
+  padding: 0 20px;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  position: relative;
+}
+
+
+/* ヘッダーロゴ調整部
+-----------------------------------------------------------------*/
+
+.header_logo {
+  width: 200px;
+  height: 100px;
+}
+
+.header_logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* メイン調整部
+-----------------------------------------------------------------*/
+
+.main {
+  //margin-top: 0px;
+  //margin-left: 150px;
+  //margin-right: 150px;
+  background-color: rgba(0,0,0,0.3);
+  //-webkit-backdrop-filter: blur(20px);
+  //backdrop-filter: blur(20px);
+  margin-left: 250px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  aligin-items: center;
+  justify-content: center;
+}
+
+/* フッター調整部
+-----------------------------------------------------------------*/
+
+.footer {
+  //margin-left: 150px;
+  //margin-right: 150px;
+  //margin-bottom: 85px;
+  background-color: #333333;
+  height: 200px;
+  margin-left: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 親要素周りの余白
+-----------------------------------------------------------------*/
+
+.main_yohaku {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer_yohaku {
+  margin: auto;
+}
+
+/* sm tb版 画像AUTOリサイズ
+-----------------------------------------------------------------*/
+
+.img-rs_syou {
+  width: 13vw;
+  height: auto;
+}
+
+.img-rs_tyuu {
+  width: 30vw;
+  height: auto;
+}
+
+.img-rs_dai {
+  width: 40vw;
+  height: auto;
+}
+
+.img-rs_saidai {
+  width: 100%;
+  height: 100%;
+}
+
+/* プロフィール調整部 
+-----------------------------------------------------------------*/
+
+.profile {
+  background-color: #0059b3;
+  width: 50vw;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* フォーム調整部
+-----------------------------------------------------------------*/
+
+.form-2 {
+  padding: 10px;
+  text-align: left;
+}
+
+.form-3 {
+  padding: 10px;
+  text-align: left;
+} 
+
+.form-button {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form_yohaku {
+  margin: 10px;
+}
+
+.error-form {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.error-info {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+textarea {
+  resize: none;
+}
+
+/* サービス調整部
+-----------------------------------------------------------------*/
+
+.service_yokoori {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service_card {
+  padding: 0 10px;
+  width: 22vw;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service_card_link {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  background-color: #ffa500;
+  transition: background-color .25s;
+}
+
+.service_card_link:hover {
+  background-color: #0077b3;
+}
+
+.service_card_info {
+  padding: 5px 10px;
+  height: 300px;
+}
+
+.service_card_time {
+
+}
+
+.service_card_headline {
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.service_card_description {
+  margin: 0;
+}
+
+/* ブログ調整部
+-----------------------------------------------------------------*/
+
+.blog_yokoori {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog_card {
+  padding: 0 10px;
+  width: 22vw;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.blog_card_link {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  background-color: #88cc00;
+  position: relative;
+  transition: background-color .25s;
+}
+
+.blog_card_link:hover {
+  background-color: #0077b3;
+}
+
+.blog_card_label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #999;
+  color: #fff;
+  display: block;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.blog_card_image {
+  width: 100%;
+  height: 180px;
+}
+
+.blog_card_info {
+  padding: 5px 10px;
+  height: 300px;
+}
+
+.blog_card_time {
+
+}
+
+.blog_card_headline {
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.blog_card_description {
+  margin: 0;
+}
+
+/* Flex box調整部
+-----------------------------------------------------------------*/
+
+.box-1 {
+    padding: 8px 19px;
+    margin: 10px;
+    color: #2c2c2f;
+    background: #666666;
+    border-top: solid 5px #fff;
+    border-right: solid 5px #fff;
+    border-left: solid 5px #fff;
+    border-bottom: solid 5px #fff;
+}
+.box-1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-2 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    font-weight: bold;
+    border: solid 3px #000000;
+    background-color: yellow;
+}
+.box-2 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-3 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: #FFF;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.box-3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-4 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    border: double 5px #4ec4d3;
+    background: #adff2f;
+}
+.box-4 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-5 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: #00bfff;
+    border: dashed 5px #2e2eff;
+}
+.box-5 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-6 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    color: #00BCD4;
+    background: #666666;
+    border-top: solid 6px #FFFFFF;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.50);
+}
+.box-6 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-7 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    background-color: #008099;
+}
+.box-7 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box-8 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5);
+}
+.box-8 p {
+    margin: 0;
+    padding: 0;
+}
+
+.yokoori {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* フォトボックス調整部
+-----------------------------------------------------------------*/
+
+.photo_box-1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(100, 0, 100, 0.8);
+  border: solid 2px #ff5500;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 181px;
+  height: 150px;
+}
+
+.photo_box-2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  border: solid 2px #b3ffff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 181px;
+  height: 150px;
+}
+
+.photo_box_no_dodai-1 {
+  padding: 0.5em 1em;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #66bbcc;
+  width: 19vw;
+}
+
+.photo_box_no_dodai-2 {
+  padding: 0.5em 1em;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #ff7d66;
+  width: 19vw;
+}
+
+.photo_box_message {
+  height: 300px;
+}
+
+.photo_box_yokoori {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ナビゲーションバー調整部
+-----------------------------------------------------------------*/
+
+ul {
+  padding-inline-start: 0;
+}
+
+ul li {
+  list-style: none;
+  min-width: 70px;
+  padding: 3px;
+  transition: background-color 0.8s;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff000;
+}
+
+ul li.current{
+  background-color: #80ff80;
+}
+
+ul li.current a {
+  color: #14a7cc;
+}
+
+ul li:hover {
+  background-color: #4d4d4d;
+}
+
+/* ハンバーガーメニュー隠し調整部
+-----------------------------------------------------------------*/
+
+.menu-btn {
+  position: fixed;
+  top: 7px;
+  right: 7px;
+  display: none;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #000000;
+}
+
+/* ハンバーガーメニュー線調整部
+-----------------------------------------------------------------*/
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #0080ff;
+  position: absolute;
+  transition: all 0.45s;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+/* ハンバーガーメニュー×ボタン調整部
+-----------------------------------------------------------------*/
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;
+}
+
+/* ハンバーガーメニュー、チェックボックス隠し
+-----------------------------------------------------------------*/
+
+#menu-btn-check {
+  display: none;
+}
+
+/* sm tb版 レスポンシブ化調整部
+-----------------------------------------------------------------*/
+
+@media only screen and (max-width:960px){
+
+/* sm tb版 ハンバーガーメニュー、ボタン調整部
+-----------------------------------------------------------------*/
+
+.menu-btn {
+  position: fixed;
+  top: 13px;
+  right: 13px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #55ff00;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* sm tb版 ハンバーガーメニュー、ナビゲーション調整部
+-----------------------------------------------------------------*/
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 80;
+  overflow: scroll;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.45s;
+}
+
+.menu-content ul {
+  padding: 100px 10px 0;
+  display: block;
+}
+
+.menu-content ul li {
+  border-bottom: solid 1px #2b00ff;
+  list-style: square;
+  display: flex;
+}
+
+.menu-content ul li a {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+/* sm tb版 色、模様、サイズ、調整部
+-----------------------------------------------------------------*/
+
+h1 {color: #7fffd4;}
+//h2 {color: #ffffff;}
+h3 {color: #158000;}
+h4 {color: #0fffff;}
+p  {color: #ffffff;}
+th {color: #00ff00;}
+td {color: #00ff00;}
+li {color: #FFFFFF;}
+
+/* sm tb版 SHOW調整部
+-----------------------------------------------------------------*/
+
+.show {
+  margin-left: 0;
+}
+
+.show > strong {
+  display: none;
+}
+
+/* sm tb版 ナビゲーションバー調整部
+-----------------------------------------------------------------*/
+
+ul li {
+  min-width: 20px;
+}
+
+ul li a {
+  display: flex;
+  margin: 2px;
+  font-size: 10px;
+  width: 100%;
+
+}
+
+/* sm tb版 ヘッダー調整部
+-----------------------------------------------------------------*/
+
+.header {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  height: 75px;
+  width: auto;
+  background-color: rgba(255,255,255,0.6);
+  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  border-radius:15px;
+  overflow: hidden;
+}
+
+/* ヘッダー上のナビゲーション調整部
+-----------------------------------------------------------------*/
+
+.header_nav {
+  display: flex;
+}
+
+/* ヘッダーロゴ調整部
+-----------------------------------------------------------------*/
+
+.header_logo {
+  width: 100px;
+  height: 50px;
+}
+
+/* sm tb版 メイン調整部
+-----------------------------------------------------------------*/
+
+.main {
+  //margin-top: 7%;
+  margin-left: 0;
+  //margin-right: 5%;
+  background-color: #000000;
+  height: auto;
+  display: flex;
+}
+
+/* sm tb版 フッター調整部
+-----------------------------------------------------------------*/
+
+.footer {
+  margin-left: 0;
+  //margin-right: 5%;
+  margin-bottom: 0;
+  background-color: #333333;
+  height: 200px;
+  display: flex;
+}
+
+/* sm tb版 親要素周りの余白調整部
+-----------------------------------------------------------------*/
+
+.main_yohaku {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer_yohaku {
+  margin: auto;
+}
+
+/* sm tb版 プロフィール調整部 
+-----------------------------------------------------------------*/
+
+.profile {
+  width: 80vw;
+}
+
+/* tb版 サービス調整部
+-----------------------------------------------------------------*/
+
+.service_yokoori {
+  display: block;
+  flex-wrap: none;
+}
+
+.service_card {
+  padding: 0 10px;
+  width: 80vw;
+  height: auto;
+}
+
+/* tb版 ブログ調整部
+-----------------------------------------------------------------*/
+
+.blog_yokoori {
+  display: block;
+  flex-wrap: none;
+}
+
+.blog_card {
+  padding: 0 10px;
+  width: 80vw;
+  height: auto;
+}
+
+.blog_card_image {
+  width: 100%;
+  height: 450px;
+}
+
+/* tb版 フォトボックス調整部
+-----------------------------------------------------------------*/
+
+.photo_box-1 {
+  width: 55vw;
+  height: 45vh;
+}
+
+.photo_box-2 {
+  width: 55vw;
+  height: 45vh;
+}
+
+.photo_box_no_dodai-1 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
+}
+
+.photo_box_no_dodai-2 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
+}
+
+/* sm tb版 画像AUTOリサイズ
+-----------------------------------------------------------------*/
+
+.img-rs_syou {
+  width: 30vw;
+  height: auto;
+}
+
+.img-rs_tyuu {
+  width: 40vw;
+  height: auto;
+}
+
+.img-rs_dai {
+  width: 50vw;
+  height: auto;
+}
+
+/* sm tb版 フォームAUTOリサイズ
+-----------------------------------------------------------------*/
+
+.form-table,
+.form-table tbody,
+.form-table tr,
+.form-table th,
+.form-table td {
+  display: block;
+}
+
+}
+
+/* sm版 レスポンシブ化調整部
+-----------------------------------------------------------------*/
+
+@media only screen and (max-width:600px){
+
+/* sm版 サービス調整部
+-----------------------------------------------------------------*/
+
+.service_yokoori {
+  display: block;
+  flex-wrap: none;
+}
+
+.service_card {
+  padding: 0 10px;
+  width: 80vw;
+  height: auto;
+}
+
+/* sm版 ブログ調整部
+-----------------------------------------------------------------*/
+
+.blog_yokoori {
+  display: block;
+  flex-wrap: none;
+}
+
+.blog_card {
+  padding: 0 10px;
+  width: 80vw;
+  height: auto;
+}
+
+.blog_card_image {
+  width: 100%;
+  height: 280px;
+}
+
+/* sm版 フォトボックス調整部
+-----------------------------------------------------------------*/
+
+.photo_box-1 {
+  width: 60vw;
+  height: 30vh;
+}
+
+.photo_box-2 {
+  width: 60vw;
+  height: 30vh;
+}
+
+.photo_box_no_dodai-1 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
+}
+
+.photo_box_no_dodai-2 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
+}
+
+}
