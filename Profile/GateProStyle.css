@@ -10,7 +10,7 @@ body {
   -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
   backdrop-filter: blur(20px);
   box-shadow: 0 5px 20px rgba(255, 152, 79, 0.5); /* 薄い影 */
-  background-image: url("1.jpg");
+  background-image: url("2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -19,9 +19,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 3.0        |
+  |  ThisStyleVersion: 3.1        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-09       |
+  |  LastUpdate: 2023-03-11       |
   |  ・。・ﾌﾟｼｭｰ・・・。          |
 ----------------------------------*
 ******************************************/
@@ -51,6 +51,10 @@ h2 {
 
 h3 {
   color: #00bfff;
+}
+
+ol {
+  padding-inline-start: 5px;
 }
 
 table {
@@ -93,10 +97,13 @@ li {
   display: block;
 }
 
+.yohaku {
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
   color: #0000ff;
-  margin: 10px;
 }
 a:hover {
   color: #00e600;
@@ -121,7 +128,7 @@ a:hover {
 .profile_component {
   background-color: rgba(250,255,255,0.7);
   border-radius: 20px;
-  margin-top: 150px;
+  margin: 150px;
   overflow: hidden;
   display: flex;
   box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
