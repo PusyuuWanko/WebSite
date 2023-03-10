@@ -2,7 +2,14 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  background-color: rgba(150, 150, 150, 0.2); /* 背景色 */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 20px rgba(255, 152, 79, 0.5); /* 薄い影 */
   background-image: url("1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +19,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 2.0        |
+  |  ThisStyleVersion: 3.0        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-02-16       |
+  |  LastUpdate: 2023-03-09       |
   |  ・。・ﾌﾟｼｭｰ・・・。          |
 ----------------------------------*
 ******************************************/
@@ -71,23 +78,25 @@ li {
   list-style: none;
 }
 
-.bokasi {
-  background-color: rgba(150, 150, 150, 0.2); /* 背景色 */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
-  border-right-color: rgba(255, 255, 255, 0.2);
-  border-bottom-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
-  backdrop-filter: blur(20px);
-  box-shadow: 0 5px 20px rgba(255, 152, 79, 0.5); /* 薄い影 */
-  margin: 10%
+.accaunt {
+  display: flex;
 }
-.bokasi p ,h1 ,h2 ,h3 {
-  margin:10px;
+
+.gaiyou {
+  background-color: rgba(225,225,225, 0.5);
+  display: flex;
+  margin: 0;
+  padding: 10px;
+}
+
+.content {
+  display: block;
 }
 
 a {
   text-decoration: none;
   color: #0000ff;
+  margin: 10px;
 }
 a:hover {
   color: #00e600;
@@ -123,6 +132,7 @@ a:hover {
 }
 .profile {
   display: block;
+  padding: 10px;
 }
 
 /* レスポンシブ調整部
@@ -133,6 +143,15 @@ a:hover {
 .profile_component {
   width: auto;
   border-radius: 15px;
+}
+
+.gaiyou {
+  background-color: rgba(225,225,225, 0.5);
+  display: block;
+}
+
+.accaunt {
+  display: block;
 }
 
 }
