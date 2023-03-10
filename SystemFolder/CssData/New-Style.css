@@ -12,15 +12,19 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 11.9       |
+  |  ThisStyleVersion: 12.0       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-10       |
+  |  LastUpdate: 2023-03-11       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・。      |
 ----------------------------------*
 ******************************************/
 
 /* 色、模様、サイズ、調整部
 -----------------------------------------------------------------*/
+
+//html {
+  scroll-behavior: smooth;
+}
 
 h1 {color: #7fffd4;}
 //h2 {color: #ffffff;}
@@ -405,9 +409,9 @@ section {
   //margin-top: 0px;
   margin-left: 250px;
   //margin-right: 150px;
-  //background-color: #ffffff;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+  background-color: #000;
+  //-webkit-backdrop-filter: blur(15px);
+  //backdrop-filter: blur(15px);
   height: auto;
   padding: 10px;
   display: flex;
@@ -599,6 +603,7 @@ textarea {
 .blog_card_image {
   width: 100%;
   height: 180px;
+  object-fit: cover;
 }
 
 .blog_card_info {
@@ -617,6 +622,70 @@ textarea {
 
 .blog_card_description {
   margin: 0;
+}
+
+/* フォトボックス調整部
+-----------------------------------------------------------------*/
+
+.photo_box-1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(100, 0, 100, 0.8);
+  border: solid 2px #ff5500;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+}
+
+.photo_box-2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  border: solid 2px #b3ffff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+}
+
+.photo_box {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.photo_box_dodai-1 {
+  margin: 0 10px;
+  width: 16vw;
+  height: auto;
+  margin-bottom: 15px;
+  background-color: #66bbcc;
+}
+
+.photo_box_dodai-2 {
+  padding: 0 10px;
+  width: 16vw;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.photo_box_info {
+  padding: 5px 10px;
+  height: 600px;
+  background-color: #66bbcc;
+}
+
+.photo_box_headline {
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.photo_box_description {
+  margin: 0;
+}
+
+.photo_box_yokoori {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Flex box調整部
@@ -726,73 +795,6 @@ textarea {
     flex-wrap: wrap;
 }
 
-/* フォトボックス調整部
------------------------------------------------------------------*/
-
-.photo_box-1 {
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 20px rgba(100, 0, 100, 0.8);
-  border: solid 2px #ff5500;
-  border-radius: 5px;
-  overflow: hidden;
-  width: auto;
-  height: 200px;
-}
-
-.photo_box-2 {
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
-  border: solid 2px #b3ffff;
-  border-radius: 5px;
-  overflow: hidden;
-  width: 120px;
-  height: 90px;
-}
-
-.photo_box {
-  background-color: rgba(255, 255, 255, 0.2);
-  margin :5px;
-  border-radius: 5px;
-  overflow: hidden;
-  width: auto;
-  height: 200px;
-}
-
-.photo_box_dodai-1 {
-  margin: 0 10px;
-  width: 16vw;
-  height: auto;
-  margin-bottom: 15px;
-  background-color: #66bbcc;
-}
-
-.photo_box_dodai-2 {
-  padding: 0 10px;
-  width: 16vw;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.photo_box_info {
-  padding: 5px 10px;
-  height: 600px;
-  background-color: #66bbcc;
-}
-
-.photo_box_headline {
-  margin: 0;
-  color: #1a1a1a;
-}
-
-.photo_box_description {
-  margin: 0;
-}
-
-.photo_box_yokoori {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* ナビゲーションバー調整部
 -----------------------------------------------------------------*/
 
@@ -825,20 +827,27 @@ ul li:hover {
   background-color: #4d4d4d;
 }
 
-/* ハンバーガーメニュー隠し調整部
+/* ハンバーガーメニュー、ボタン、非表示調整部
 -----------------------------------------------------------------*/
 
 .menu-btn {
   position: fixed;
-  top: 7px;
-  right: 7px;
+  top: 13px;
+  right: 13px;
   display: none;
   height: 60px;
   width: 60px;
   justify-content: center;
   align-items: center;
   z-index: 90;
-  background-color: #000000;
+  background-color: #55ff00;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ham_nav_setumei {
+  display: none;
+  padding: 35px;
 }
 
 /* ハンバーガーメニュー線調整部
@@ -898,22 +907,15 @@ ul li:hover {
 
 @media only screen and (max-width:960px){
 
-/* sm tb版 ハンバーガーメニュー、ボタン調整部
+/* sm tb版 ハンバーガーメニュー、ボタン、表示調整部
 -----------------------------------------------------------------*/
 
 .menu-btn {
-  position: fixed;
-  top: 13px;
-  right: 13px;
   display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  z-index: 90;
-  background-color: #55ff00;
-  border-radius: 50%;
-  overflow: hidden;
+}
+
+.ham_nav_setumei {
+  display: flex;
 }
 
 /* sm tb版 ハンバーガーメニュー、ナビゲーション調整部
@@ -1080,8 +1082,7 @@ ul li:hover {
 }
 
 .blog_card_image {
-  width: 100%;
-  height: 250px;
+  height: 200px;
 }
 
 /* sm tb版 ナビゲーションバー調整部
@@ -1105,18 +1106,17 @@ ul li a {
 -----------------------------------------------------------------*/
 
 .photo_box-1 {
-  width: 25vw;
-  height: 20vh;
+  width: 200px;
+  height: 150px;
 }
 
 .photo_box-2 {
-  width: 25vw;
-  height: 20vh;
+  width: 200px;
+  height: 150px;
 }
 
 .photo_box {
-  width: auto;
-  height: 25vh;
+  height: 200px;
 }
 
 .photo_box_dodai-1 {
@@ -1196,26 +1196,24 @@ ul li a {
 }
 
 .blog_card_image {
-  width: 100%;
-  height: 280px;
+  height: 230px;
 }
 
 /* sm版 フォトボックス調整部
 -----------------------------------------------------------------*/
 
 .photo_box-1 {
-  width: 60vw;
-  height: 30vh;
+  width: 150px;
+  height: 100px;
 }
 
 .photo_box-2 {
-  width: 60vw;
-  height: 30vh;
+  width: 150px;
+  height: 100px;
 }
 
 .photo_box {
-  width: auto;
-  height: 25vh;
+  height: 230px;
 }
 
 .photo_box_dodai-1 {
