@@ -12,9 +12,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 11.9       |
+  |  ThisStyleVersion: 11.6       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-10       |
+  |  LastUpdate: 2023-03-05       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・。      |
 ----------------------------------*
 ******************************************/
@@ -24,12 +24,12 @@ body {
 
 h1 {color: #7fffd4;}
 //h2 {color: #ffffff;}
-h3 {color: #00ffff;}
+h3 {color: #158000;}
 h4 {color: #0fffff;}
-p  {color: #ffffff;}
+p  {color: #000000;}
 th {color: #00ff00;}
 td {color: #00ff00;}
-li {color: #FFFFFF;}
+li {color: #000000;}
 
 button {
   border-radius: 5px;
@@ -253,7 +253,6 @@ section {
 .show {
   height: 100dvh;
   width: auto;
-  margin-left: 250px;
   position: relative;
   overflow: hidden;
 }
@@ -363,12 +362,14 @@ section {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 250px;
-  background-color: #18aecc;
+  height: 75px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: rgba(0,0,0,0.6);
   box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  border-radius:15px;
+  overflow: hidden;
   z-index: 999;
 }
 
@@ -377,19 +378,20 @@ section {
 
 .header_nav {
   padding: 0 20px;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   height: inherit;
   position: relative;
 }
 
+
 /* ヘッダーロゴ調整部
 -----------------------------------------------------------------*/
 
 .header_logo {
-  width: 210px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
 }
 
 .header_logo img {
@@ -403,11 +405,11 @@ section {
 
 .main {
   //margin-top: 0px;
-  margin-left: 250px;
+  //margin-left: 150px;
   //margin-right: 150px;
-  //background-color: #ffffff;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+  background-color: #ffffff;
+  //-webkit-backdrop-filter: blur(20px);
+  //backdrop-filter: blur(20px);
   height: auto;
   padding: 10px;
   display: flex;
@@ -420,9 +422,9 @@ section {
 -----------------------------------------------------------------*/
 
 .footer {
-  margin-left: 250px;
+  //margin-left: 150px;
   //margin-right: 150px;
-  //margin-bottom: 85px;
+  margin-bottom: 85px;
   background-color: #333333;
   height: 200px;
   display: flex;
@@ -522,7 +524,7 @@ textarea {
 
 .service_card {
   padding: 0 10px;
-  width: 16vw;
+  width: 22vw;
   height: auto;
   margin-bottom: 15px;
 }
@@ -567,7 +569,7 @@ textarea {
 
 .blog_card {
   padding: 0 10px;
-  width: 16vw;
+  width: 22vw;
   height: auto;
   margin-bottom: 15px;
 }
@@ -603,7 +605,7 @@ textarea {
 
 .blog_card_info {
   padding: 5px 10px;
-  height: 400px;
+  height: 300px;
 }
 
 .blog_card_time {
@@ -735,8 +737,8 @@ textarea {
   border: solid 2px #ff5500;
   border-radius: 5px;
   overflow: hidden;
-  width: auto;
-  height: 200px;
+  width: 181px;
+  height: 150px;
 }
 
 .photo_box-2 {
@@ -745,47 +747,28 @@ textarea {
   border: solid 2px #b3ffff;
   border-radius: 5px;
   overflow: hidden;
-  width: 120px;
-  height: 90px;
+  width: 181px;
+  height: 150px;
 }
 
-.photo_box {
-  background-color: rgba(255, 255, 255, 0.2);
-  margin :5px;
+.photo_box_no_dodai-1 {
+  padding: 0.5em 1em;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #66bbcc;
+  width: 19vw;
+}
+
+.photo_box_no_dodai-2 {
+  padding: 0.5em 1em;
+  margin: 10px;
   border-radius: 5px;
-  overflow: hidden;
-  width: auto;
-  height: 200px;
+  background-color: #ff7d66;
+  width: 19vw;
 }
 
-.photo_box_dodai-1 {
-  margin: 0 10px;
-  width: 16vw;
-  height: auto;
-  margin-bottom: 15px;
-  background-color: #66bbcc;
-}
-
-.photo_box_dodai-2 {
-  padding: 0 10px;
-  width: 16vw;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.photo_box_info {
-  padding: 5px 10px;
-  height: 600px;
-  background-color: #66bbcc;
-}
-
-.photo_box_headline {
-  margin: 0;
-  color: #1a1a1a;
-}
-
-.photo_box_description {
-  margin: 0;
+.photo_box_message {
+  height: 300px;
 }
 
 .photo_box_yokoori {
@@ -797,11 +780,12 @@ textarea {
 -----------------------------------------------------------------*/
 
 ul {
-  padding-inline-start: 0;
+  display: table;
+  text-align: center;
 }
 
 ul li {
-  list-style: none;
+  display: table-cell;
   min-width: 70px;
   padding: 3px;
   transition: background-color 0.8s;
@@ -944,8 +928,7 @@ ul li:hover {
 }
 
 .menu-content ul li a {
-  justify-content: center;
-  display: flex;
+  display: block;
   width: 100%;
   font-size: 15px;
   box-sizing: border-box;
@@ -970,17 +953,33 @@ ul li:hover {
 /* sm tb版 色、模様、サイズ、調整部
 -----------------------------------------------------------------*/
 
-
+h1 {color: #7fffd4;}
+//h2 {color: #ffffff;}
+h3 {color: #158000;}
+h4 {color: #0fffff;}
+p  {color: #ffffff;}
+th {color: #00ff00;}
+td {color: #00ff00;}
+li {color: #FFFFFF;}
 
 /* sm tb版 SHOW調整部
 -----------------------------------------------------------------*/
 
-.show {
-  margin-left: 0;
+.show > strong {
+  display: none;
 }
 
-.show > strong {
-  font-size: 50px;
+/* sm tb版 ナビゲーションバー調整部
+-----------------------------------------------------------------*/
+
+ul li {
+  min-width: 20px;
+}
+
+ul li a {
+  margin: 2px;
+  font-size: 10px;
+  width: 100%;
 }
 
 /* sm tb版 ヘッダー調整部
@@ -991,27 +990,10 @@ ul li:hover {
   top: 5px;
   left: 5px;
   right: 5px;
-  height: 75px;
-  width: auto;
   background-color: rgba(255,255,255,0.6);
   box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
   border-radius:15px;
   overflow: hidden;
-}
-
-/* ヘッダー上のナビゲーション調整部
------------------------------------------------------------------*/
-
-.header_nav {
-  display: flex;
-}
-
-/* ヘッダーロゴ調整部
------------------------------------------------------------------*/
-
-.header_logo {
-  width: 100px;
-  height: 50px;
 }
 
 /* sm tb版 メイン調整部
@@ -1019,17 +1001,23 @@ ul li:hover {
 
 .main {
   //margin-top: 7%;
-  margin-left: 0;
+  //margin-left: 5%;
   //margin-right: 5%;
+  background-color: #000000;
+  height: auto;
+  display: flex;
 }
 
 /* sm tb版 フッター調整部
 -----------------------------------------------------------------*/
 
 .footer {
-  margin-left: 0;
+  //margin-left: 5%;
   //margin-right: 5%;
-  //margin-bottom: 0;
+  margin-bottom: 0;
+  background-color: #333333;
+  height: 200px;
+  display: flex;
 }
 
 /* sm tb版 親要素周りの余白調整部
@@ -1055,13 +1043,13 @@ ul li:hover {
 -----------------------------------------------------------------*/
 
 .service_yokoori {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  flex-wrap: none;
 }
 
 .service_card {
   padding: 0 10px;
-  width: 37vw;
+  width: 80vw;
   height: auto;
 }
 
@@ -1069,66 +1057,44 @@ ul li:hover {
 -----------------------------------------------------------------*/
 
 .blog_yokoori {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  flex-wrap: none;
 }
 
 .blog_card {
   padding: 0 10px;
-  width: 37vw;
+  width: 80vw;
   height: auto;
 }
 
 .blog_card_image {
   width: 100%;
-  height: 250px;
-}
-
-/* sm tb版 ナビゲーションバー調整部
------------------------------------------------------------------*/
-
-ul {
-  display: flex;
-}
-
-ul li {
-  min-width: 20px;
-}
-
-ul li a {
-  margin: 2px;
-  font-size: 10px;
-  width: 100%;
+  height: 450px;
 }
 
 /* tb版 フォトボックス調整部
 -----------------------------------------------------------------*/
 
 .photo_box-1 {
-  width: 25vw;
-  height: 20vh;
+  width: 55vw;
+  height: 45vh;
 }
 
 .photo_box-2 {
-  width: 25vw;
-  height: 20vh;
+  width: 55vw;
+  height: 45vh;
 }
 
-.photo_box {
-  width: auto;
-  height: 25vh;
+.photo_box_no_dodai-1 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
 }
 
-.photo_box_dodai-1 {
-  padding: 0 10px;
-  width: 37vw;
-  height: auto;
-}
-
-.photo_box_dodai-2 {
-  padding: 0 10px;
-  width: 37vw;
-  height: auto;
+.photo_box_no_dodai-2 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
 }
 
 /* sm tb版 画像AUTOリサイズ
@@ -1213,21 +1179,16 @@ ul li a {
   height: 30vh;
 }
 
-.photo_box {
-  width: auto;
-  height: 25vh;
+.photo_box_no_dodai-1 {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 80vw;
 }
 
-.photo_box_dodai-1 {
-  padding: 0 10px;
+.photo_box_no_dodai-2 {
+  margin: 0;
+  margin-bottom: 15px;
   width: 80vw;
-  height: auto;
-}
-
-.photo_box_dodai-2 {
-  padding: 0 10px;
-  width: 80vw;
-  height: auto;
 }
 
 }
