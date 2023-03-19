@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 0.6        |
+  |  ThisStyleVersion: 0.7        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-02-22       |
+  |  LastUpdate: 2023-03-19       |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
 ******************************************/
@@ -10,9 +10,9 @@
 /* Contact
 ---------------------------------*/
 
-var validate = function() {
+let validate = function() {
 
-	var flag = true;
+	let flag = true;
 
 	removeElementsByClass("error-info");
 	removeClass("error-form");
@@ -65,31 +65,31 @@ var validate = function() {
 
 
 
-var errorElement = function(form, msg) {
+let errorElement = function(form, msg) {
 	form.className = "error-form";
-	var newElement = document.createElement("div");
+	let newElement = document.createElement("div");
 	newElement.className = "error-info";
-	var newText = document.createTextNode(msg);
+	let newText = document.createTextNode(msg);
 	newElement.appendChild(newText);
 	form.parentNode.insertBefore(newElement, form.nextSibling);
 }
 
 
-var removeElementsByClass = function(className){
-	var elements = document.getElementsByClassName(className);
+let removeElementsByClass = function(className){
+	let elements = document.getElementsByClassName(className);
 	while (elements.length > 0){ 
 		elements[0].parentNode.removeChild(elements[0]);
 	}
 }
 
-var removeClass = function(className){
-	var elements = document.getElementsByClassName(className);
+let removeClass = function(className){
+	let elements = document.getElementsByClassName(className);
 	while (elements.length > 0) {
 		elements[0].className = "";
 	}
 }
 
-var validateMail = function (val){
+let validateMail = function (val){
 	if (val.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)==null) {
 		return false;
 	} else {
@@ -98,7 +98,7 @@ var validateMail = function (val){
 }
 
 
-var validateNumber = function (val){
+let validateNumber = function (val){
 	if (val.match(/[^0-9]+/)) {
 		return false;
 	} else {
@@ -107,7 +107,7 @@ var validateNumber = function (val){
 }
 
 
-var validateTel = function (val){
+let validateTel = function (val){
 	if (val.match(/^[0-9-]{6,13}$/) == null) {
 		return false;
 	} else {
@@ -116,7 +116,7 @@ var validateTel = function (val){
 }
 
 
-var validateKana = function (val){
+let validateKana = function (val){
 	if (val.match(/^[ぁ-ん]+$/) == null) {
 		return false;
 	} else {
@@ -136,17 +136,25 @@ document.addEventListener('DOMContentLoaded', function() {
 /* PusyuuTheMesseage
 ---------------------------------*/
 
-let pusyuu = "あ、あ、テステス、テストコメントです。まだまだプログラミング初心者です。応戦よろしくお願いします。";
+const pusyuu = "あ、あ、テステス、テストコメントです。まだまだプログラミング初心者です。応戦よろしくお願いします。";
   console.log(pusyuu);
 
 /* OnClickMusic
 ---------------------------------*/
 
 window.onload = function() {
-    var my_audio = new Audio("../MusicData/pasuta.mp3");
+    let my_audio = new Audio("../MusicData/pasuta.mp3");
             //ボタンにクリックイベントを設定
             document.getElementById("btn01").onclick = function() {
             my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
             my_audio.play();  //サウンドを再生
         }
+}
+
+/* Loading Display
+---------------------------------*/
+
+window.onload = function() {
+  let spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
 }
