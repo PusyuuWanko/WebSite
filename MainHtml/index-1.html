@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=6.0, minimum-scale=1.0">
-    <title>PusyuuPage - メインページ</title>
-    <link rel="stylesheet" href="../SystemFolder/CssData/Style-1.css">
-    <link rel="shortcut icon" href="../SystemFolder/IconData/favicon.ico">
-    <script src="../SystemFolder/JsData/Script.js" type="text/javascript" charset="UTF-8"></script>
-    <!--
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=6.0, minimum-scale=1.0">
+  <title>PusyuuPage - メインページ</title>
+  <link rel="stylesheet" href="../SystemFolder/CssData/Style-1.css">
+  <link rel="shortcut icon" href="../SystemFolder/IconData/favicon.ico">
+  <script src="../SystemFolder/JsData/Script.js" type="text/javascript" charset="UTF-8"></script>
+  <!--
       *----------------------------------
-      |  ThisPageVersion: 23.0        |
+      |  ThisPageVersion: 23.1        |
       |  © 2021-2023 By Pusyuu        |
       |  LastUpdate: 2023-03-19       |
       |  ・。・プシューページ㌨       |
     ----------------------------------*
     -->
-  </head>
+</head>
   <body>
     <header class="header">
       <div class="header_nav">
@@ -24,9 +24,7 @@
             <img src="../SystemFolder/IconData/logo-black.png" alt="ロゴ画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
           </a>
         </h1>
-        <div class="hamburger-menu">
-          <input type="checkbox" id="menu-btn-check">
-          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="hamburger-menu"> <input type="checkbox" id="menu-btn-check"> <label for="menu-btn-check" class="menu-btn"><span></span></label>
           <div class="menu-content">
             <details class="ham_nav_setumei">
               <summary>ユーザビリティ（説明）</summary>
@@ -47,18 +45,18 @@
         </div>
       </div>
     </header>
-      <div id="loading">
-        <div class="load_content">みすぼらしい画面消去中</div>
-      </div>
-      <div class="show">
-        <strong>PusyuuWorld</strong>
-        <div class="scroll">SCROLL<span class="arw"></span></div>
-        <video src="../SystemFolder/VideoData/Show-video.mp4" controlsList="nodownload" muted autoplay playsinline loop oncontextmenu="return false;" preload="auto">
-        <//img src="../SystemFolder/ImageData/Show-img.jpg" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-      </div>
+    <div id="loading">
+      <div class="load_content">みすぼらしい画面消去中。。。少々お待ちください</div>
+    </div>
+    <div class="show">
+      <strong>PusyuuWorld</strong>
+      <div class="scroll">SCROLL<span class="arw"></span></div>
+      <video src="../SystemFolder/VideoData/Show-video.mp4" controlsList="nodownload" muted autoplay playsinline loop oncontextmenu="return false;" preload="auto">
+      <//img src="../SystemFolder/ImageData/Show-img.jpg" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+    </div>
     <main class="main">
       <div class="main_yohaku">
-        <section id="p1">
+        <section class="section" id="p1">
           <h2>プロフィール</h2>
             <div class="center">
               <div class="profile">
@@ -95,7 +93,7 @@
             <p>このサービス（ページ）では、できるだけ依存しない、できるだけオープンソースで（<a href="https://github.com/PusyuuOfficial/WebSite" target="_blank">ソースコードはこちら</a>）、サービス上での情報収集をできるだけ行わないをモットーに作成してます。</p>
             <p>このページは、1からWindows標準NotePad.exeを使用して、コーディングしてます。</p>
         </section>
-        <section id="p2">
+        <section class="section" id="p2">
           <h2 id="p2">プシューの部屋</h2>
           <h3>最近の出来事への一言</h3>
             <div class="photo_box-2">
@@ -130,7 +128,7 @@
               </article>
             </div>
         </section>
-        <section id="p3">
+        <section class="section" id="p3">
           <h2 id="p3">プシューサービス</h2>
             <p>プシューが提供しているサービス一覧</p>
               <div class="service_yokoori">
@@ -166,7 +164,7 @@
               <button type="button" onclick="location.href='../SystemFolder/SubHtml/s-service_archive.html'">プシューサービスをさらに見る</button>
             </div>
         </section>
-        <section id="p4">
+        <section class="section" id="p4">
           <h2>プシューログ</h2>
             <p>プシューログではプシューの実体験や人によるとは思いますが役に立つ情報などを発信していきます。</p>
               <div class="blog_yokoori">
@@ -208,10 +206,10 @@
               <button type="button" onclick="location.href='../SystemFolder/SubHtml/b-blog_archive.html'">プシューログをさらに見る</button>
             </div>
         </section>
-        <section id="p5">
+        <section class="section" id="p5">
           <h2>ニュース</h2>
             <h3>更新情報</h3>
-              <marquee bgcolor="#cccccc" scrollamount="4">このバージョンでは、ニュース情報を更新、少々デザイン変更、主にヘッダー周辺を変更、バグ修正などを行いました。 このページのバージョン23.0</marquee>
+              <marquee bgcolor="#cccccc" scrollamount="4">このバージョンでは、ニュース情報を更新、少々デザイン変更、入れ子情報の修正、バグ修正などを行いました。 このページのバージョン23.1</marquee>
             <h3>ニコニコ動画始めました！！</h3>
               <p>ニコニコ動画では今まで動画としてこのウェブサイトに貼ってあった動画や、</p>
               <p>新規での動画は、皆さんに紹介したいこと等をアップロードしていきたいです。</p>
@@ -222,7 +220,7 @@
               <p>と思いきやまた始めました今回からはプシューサービスの最新情報発信を目的としてやっていきます。</p>
               <p class="text"><a href="https://twitter.com/Pusyuuofficial" target="_blank">プシュー公式ツイッターへジャンプ</a></p>
         </section>
-        <section id="p6">
+        <section class="section" id="p6">
           <h2>お問い合わせ</h2>
             <p>お問い合わせフォームでは、ご感想、やご質問などをプシューに届けることができます。</p>
             <p>※このフォームでは、暗号化が行われません、なので安全な回線を使って送信をよろしくお願いします。予めご了承ください。</p>
@@ -263,14 +261,12 @@
     </main>
     <footer class="footer">
       <div class="footer_yohaku">
-        <article>
-           <hr></hr>
-             <a class="kiyaku" href="index-2.html">利用規約</a>
-           <hr></hr>
-             <a class="kiyaku" href="index-3.html">プライバシーポリシー</a>
-           <hr></hr>
-             <small class="Copyright">© 2020-2023 by Pusyuu</small>
-        </article>
+         <hr></hr>
+         <a class="kiyaku" href="index-2.html">利用規約</a>
+         <hr></hr>
+         <a class="kiyaku" href="index-3.html">プライバシーポリシー</a>
+         <hr></hr>
+        <small class="Copyright">© 2020-2023 by Pusyuu</small>
       </div>
     </footer>
   </body>
