@@ -1,0 +1,6 @@
+<Directory "/usr/lib/cgi-bin/">
+        Options +ExecCGI +FollowSymLinks
+        AddHandler cgi-script .cgi .py .php
+        AddHandler text/html .html .htm .txt .css .js
+        Require all granted
+</Directory>

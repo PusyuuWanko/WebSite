@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 
 body {
-  background-image: url("4.JPG");
+  background-image: url("5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,10 +13,10 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 12.2       |
+  |  ThisStyleVersion: 12.5       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-20       |
-  |  ・。・ﾌﾟｼｭｰ㌨？・・・。      |
+  |  LastUpdate: 2023-03-28       |
+  |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
 
@@ -445,7 +445,7 @@ td {
   //margin-top: 0px;
   margin-left: 250px;
   //margin-right: 150px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(225,225,225,0.0);
   height: auto;
   padding: 10px;
   display: flex;
@@ -507,7 +507,8 @@ td {
 -----------------------------------------------------------------*/
 
 .profile {
-  background-color: #0059b3;
+  background-color: rgba(50,50,50,0.5);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.50);
   width: 50vw;
   padding: 10px;
   border-radius: 10px;
@@ -548,15 +549,12 @@ td {
 
 textarea {
   resize: none;
+  width: 97%;
+  height: auto;
 }
 
 /* サービス調整部
 -----------------------------------------------------------------*/
-
-.service_yokoori {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .service_card {
   padding: 0 10px;
@@ -569,21 +567,25 @@ textarea {
   display: block;
   color: #333;
   text-decoration: none;
-  background-color: #ffa500;
-  transition: background-color .25s;
 }
 
-.service_card_link:hover {
+.service_card_info:hover {
   background-color: #0077b3;
 }
 
 .service_card_info {
   padding: 5px 10px;
   height: 300px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(200,200,200,0.2);
+  transition: background-color .25s;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 .service_card_time {
-
+  color: #ccc;
 }
 
 .service_card_headline {
@@ -598,11 +600,6 @@ textarea {
 /* ブログ調整部
 -----------------------------------------------------------------*/
 
-.blog_yokoori {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .blog_card {
   padding: 0 10px;
   width: 16vw;
@@ -614,9 +611,13 @@ textarea {
   display: block;
   color: #333;
   text-decoration: none;
-  background-color: #88cc00;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(200,200,200,0.2);
   position: relative;
   transition: background-color .25s;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 .blog_card_link:hover {
@@ -646,7 +647,7 @@ textarea {
 }
 
 .blog_card_time {
-
+  color: #ccc;
 }
 
 .blog_card_headline {
@@ -658,33 +659,23 @@ textarea {
   margin: 0;
 }
 
-/* フォトボックス調整部
+/* フォト調整部
 -----------------------------------------------------------------*/
 
 .photo_box-1 {
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 20px rgba(100, 0, 100, 0.8);
-  border: solid 2px #ff5500;
+  border: solid 2px #1a0d00;
   border-radius: 5px;
   overflow: hidden;
   width: 300px;
   height: 200px;
 }
 
-.photo_box-2 {
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
-  border: solid 2px #b3ffff;
-  border-radius: 5px;
+.photo_box-1 {
+  border: solid 2px #ffffff;
+  border-radius: 2px;
   overflow: hidden;
   width: 300px;
   height: 200px;
-}
-
-.photo_box {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
 }
 
 .photo_box_dodai-1 {
@@ -692,34 +683,39 @@ textarea {
   width: 16vw;
   height: auto;
   margin-bottom: 15px;
-  background-color: #66bbcc;
+  background-color: #662200;
 }
 
-.photo_box_dodai-2 {
+.photo_card {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.photo_card_dodai {
   padding: 0 10px;
   width: 16vw;
   height: auto;
   margin-bottom: 15px;
 }
 
-.photo_box_info {
+.photo_card_info {
   padding: 5px 10px;
   height: 700px;
-  background-color: #66bbcc;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(200,200,200,0.2);
+  border-radius: 2px;
+  overflow: hidden;
 }
 
-.photo_box_headline {
+.photo_card_headline {
   margin: 0;
   color: #1a1a1a;
 }
 
-.photo_box_description {
+.photo_card_description {
   margin: 0;
-}
-
-.photo_box_yokoori {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* Flex box調整部
@@ -820,6 +816,18 @@ textarea {
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5);
 }
 .box-8 p {
+    margin: 0;
+    padding: 0;
+}
+
+.box-9 {
+    padding: 0.5em 1em;
+    margin: 10px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.box-9 p {
     margin: 0;
     padding: 0;
 }
