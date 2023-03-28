@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 0.7        |
+  |  ThisStyleVersion: 0.8        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-19       |
+  |  LastUpdate: 2023-03-24       |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
 ******************************************/
@@ -21,16 +21,10 @@ let validate = function() {
 	if(document.form.name.value == ""){
 		errorElement(document.form.name, "お名前が入力されていません。");
 		flag = false;
-	}
-
-	// ふりがなの入力をチェック
-	if(document.form.furigana.value == ""){
-		errorElement(document.form.furigana, "ふりがなが入力されていません。");
-        	flag = false;
 	} else {
-		// メールアドレスの形式をチェック
-		if(!validateKana(document.form.furigana.value)){
-			errorElement(document.form.furigana, "ひらがな以外の文字が入っています。");
+		// お名前の形式をチェック
+		if(!validateName(document.form.name.value)){
+			errorElement(document.form.name, "アルファベット以外の文字が入っています。");
             			flag = false;
 		}
 	}
@@ -116,8 +110,8 @@ let validateTel = function (val){
 }
 
 
-let validateKana = function (val){
-	if (val.match(/^[ぁ-ん]+$/) == null) {
+let validateName = function (val){
+	if (val.match(/^[a-z,A-Z]+$/) == null) {
 		return false;
 	} else {
 		return true;
