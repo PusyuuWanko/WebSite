@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 12.5       |
+  |  ThisStyleVersion: 12.6       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-28       |
+  |  LastUpdate: 2023-03-29       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -659,63 +659,15 @@ textarea {
   margin: 0;
 }
 
-/* フォト調整部
+/* フォトフレーム調整部
 -----------------------------------------------------------------*/
 
-.photo_box-1 {
-  border: solid 2px #1a0d00;
+.photo_frame-1 {
+  border: solid 2px #ffffff;
   border-radius: 5px;
   overflow: hidden;
   width: 300px;
   height: 200px;
-}
-
-.photo_box-1 {
-  border: solid 2px #ffffff;
-  border-radius: 2px;
-  overflow: hidden;
-  width: 300px;
-  height: 200px;
-}
-
-.photo_box_dodai-1 {
-  margin: 0 10px;
-  width: 16vw;
-  height: auto;
-  margin-bottom: 15px;
-  background-color: #662200;
-}
-
-.photo_card {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.photo_card_dodai {
-  padding: 0 10px;
-  width: 16vw;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.photo_card_info {
-  padding: 5px 10px;
-  height: 700px;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  background-color: rgba(200,200,200,0.2);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.photo_card_headline {
-  margin: 0;
-  color: #1a1a1a;
-}
-
-.photo_card_description {
-  margin: 0;
 }
 
 /* Flex box調整部
@@ -1109,11 +1061,6 @@ ul li a:hover {
 /* tb版 サービス調整部
 -----------------------------------------------------------------*/
 
-.service_yokoori {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .service_card {
   padding: 0 10px;
   width: 37vw;
@@ -1122,11 +1069,6 @@ ul li a:hover {
 
 /* tb版 ブログ調整部
 -----------------------------------------------------------------*/
-
-.blog_yokoori {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .blog_card {
   padding: 0 10px;
@@ -1154,33 +1096,12 @@ ul li a {
   width: 100%;
 }
 
-/* tb版 フォトボックス調整部
+/* tb版 フォトフレーム調整部
 -----------------------------------------------------------------*/
 
-.photo_box-1 {
+.photo_frame-1 {
   width: 300px;
   height: 250px;
-}
-
-.photo_box-2 {
-  width: 300px;
-  height: 250px;
-}
-
-.photo_box {
-  height: 200px;
-}
-
-.photo_box_dodai-1 {
-  padding: 0 10px;
-  width: 37vw;
-  height: auto;
-}
-
-.photo_box_dodai-2 {
-  padding: 0 10px;
-  width: 37vw;
-  height: auto;
 }
 
 /* sm tb版 画像AUTOリサイズ
@@ -1261,30 +1182,9 @@ ul li a {
 /* sm版 フォトボックス調整部
 -----------------------------------------------------------------*/
 
-.photo_box-1 {
+.photo_frame-1 {
   width: 200px;
   height: 150px;
-}
-
-.photo_box-2 {
-  width: 200px;
-  height: 150px;
-}
-
-.photo_box {
-  height: 230px;
-}
-
-.photo_box_dodai-1 {
-  padding: 0 10px;
-  width: 80vw;
-  height: auto;
-}
-
-.photo_box_dodai-2 {
-  padding: 0 10px;
-  width: 80vw;
-  height: auto;
 }
 
 }
