@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 0.8        |
+  |  ThisStyleVersion: 0.9        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-24       |
+  |  LastUpdate: 2023-04-03       |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
 ******************************************/
@@ -117,15 +117,6 @@ let validateName = function (val){
 		return true;
 	}
 }
-
-/* NavReload
----------------------------------*/
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("NavReload").addEventListener("click", function(){
-  window.location.reload();
-  })
-});
 
 /* PusyuuTheMesseage
 ---------------------------------*/
