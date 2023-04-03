@@ -579,7 +579,7 @@ textarea {
   height: 300px;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  background-color: rgba(200,200,200,0.2);
+  background-color: rgba(225,150,225,0.3);
   transition: background-color .25s;
   border-radius: 2px;
   overflow: hidden;
@@ -614,7 +614,7 @@ textarea {
   text-decoration: none;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
-  background-color: rgba(200,200,200,0.2);
+  background-color: rgba(225,150,225,0.3);
   position: relative;
   transition: background-color .25s;
   border-radius: 2px;
@@ -932,7 +932,7 @@ ul li a:hover {
 }
 
 #modal_ham_nav .close::after {
-  content: "x";
+  content: "×";
   color: white;
   position: absolute;
   position: fixed;
