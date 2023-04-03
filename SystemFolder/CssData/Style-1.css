@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 12.6       |
+  |  ThisStyleVersion: 12.7       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-03-29       |
+  |  LastUpdate: 2023-04-03       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -23,7 +23,7 @@ body {
 /* 色、模様、サイズ、調整部
 -----------------------------------------------------------------*/
 
-//html {
+html {
   scroll-behavior: smooth;
 }
 
@@ -446,6 +446,7 @@ td {
   margin-left: 250px;
   //margin-right: 150px;
   background-color: rgba(225,225,225,0.0);
+  word-break: break-all;
   height: auto;
   padding: 10px;
   display: flex;
@@ -824,36 +825,30 @@ ul li a:hover {
   padding: 3px;
 }
 
-/* ハンバーガーメニュー、ボタン、非表示調整部
+/* sm tb版 レスポンシブ化調整部
 -----------------------------------------------------------------*/
 
-.menu-btn {
+@media only screen and (max-width:960px){
+
+/* モーダル型ハンバーガーメニュー調整部
+-----------------------------------------------------------------*/
+
+.modal_menu-btn {
   position: fixed;
   top: 5px;
   right: 5px;
-  display: none;
   height: 45px;
   width: 45px;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 90;
   background-color: #1a1a1a;
-  //border-radius: 50%;
-  //overflow: hidden;
 }
 
-.ham_nav_setumei {
-  display: none;
-  padding: 35px;
-  color: #aaff00;
-}
-
-/* ハンバーガーメニュー線調整部
------------------------------------------------------------------*/
-
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
+.modal_menu-btn span,
+.modal_menu-btn span:before,
+.modal_menu-btn span:after {
   content: '';
   display: block;
   height: 3px;
@@ -864,108 +859,94 @@ ul li a:hover {
   transition: all 0.45s;
 }
 
-.menu-btn span:before {
+.modal_menu-btn span:before {
   bottom: 8px;
 }
 
-.menu-btn span:after {
+.modal_menu-btn span:after {
   top: 8px;
 }
 
-/* ハンバーガーメニュー×ボタン調整部
------------------------------------------------------------------*/
-
-#menu-btn-check:checked ~ .menu-btn span {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#menu-btn-check:checked ~ .menu-btn span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-#menu-btn-check:checked ~ .menu-btn span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-#menu-btn-check:checked ~ .menu-content {
-  left: 0;
-}
-
-/* ハンバーガーメニュー、チェックボックス隠し
------------------------------------------------------------------*/
-
-#menu-btn-check {
+#modal_ham_nav {
   display: none;
+  margin-top: 50vh;
 }
 
-/* sm tb版 レスポンシブ化調整部
------------------------------------------------------------------*/
-
-@media only screen and (max-width:960px){
-
-/* sm tb版 ハンバーガーメニュー、ボタン、表示調整部
------------------------------------------------------------------*/
-
-.menu-btn {
-  display: flex;
-}
-
-.ham_nav_setumei {
-  display: flex;
-}
-
-/* sm tb版 ハンバーガーメニュー、ナビゲーション調整部
------------------------------------------------------------------*/
-
-.menu-content {
+#modal_ham_nav:target {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute; 
   top: 0;
-  left: 100%;
-  z-index: 80;
-  overflow: scroll;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal_ham_nav .modal_ham_nav_box {
+  position: fixed;
+  z-index: 1001;
+}
+
+#modal_ham_nav .modal_ham_nav_content {
+  position: relative;
   background-color: rgba(0,0,0,0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  transition: all 0.45s;
+  cursor: default;
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu-content ul {
-  padding: 100px 10px 0;
+#modal_ham_nav ul {
+  display: block;
+  padding-left: 0;
+}
+
+#modal_ham_nav ul li {
+  min-width: 20px;
+}
+
+#modal_ham_nav ul li a {
+  font-size: 15px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+#modal_ham_nav .close {
+  position: relative;
   display: block;
 }
 
-.menu-content ul li {
-  border-bottom: solid 1px #2b00ff;
-  list-style: square;
-  display: flex;
+#modal_ham_nav .close::before {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: default;
 }
 
-.menu-content ul li a {
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  font-size: 15px;
-  box-sizing: border-box;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 9px 15px 10px 0;
-  position: relative;
-}
-
-.menu-content ul li a::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-top: solid 2px #ffffff;
-  border-right: solid 2px #ffffff;
-  transform: rotate(45deg);
+#modal_ham_nav .close::after {
+  content: "x";
+  color: white;
   position: absolute;
-  right: 11px;
-  top: 16px;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  border-radius: 3px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* sm tb版 色、模様、サイズ、調整部
