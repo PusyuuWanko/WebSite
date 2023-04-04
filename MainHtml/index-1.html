@@ -9,9 +9,9 @@
   <script src="../SystemFolder/JsData/Script.js" type="text/javascript" charset="UTF-8"></script>
   <!--
       *----------------------------------
-      |  ThisPageVersion: 23.7        |
+      |  ThisPageVersion: 23.8        |
       |  © 2021-2023 By Pusyuu        |
-      |  LastUpdate: 2023-04-03       |
+      |  LastUpdate: 2023-04-04       |
       |  ・。・プシューページ㌨       |
     ----------------------------------*
     -->
@@ -24,11 +24,15 @@
             <img src="../SystemFolder/IconData/logo-black.png" alt="ロゴ画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
           </a>
         </h1>
-        <a href="#modal_ham_nav" class="modal_menu-btn" alt="ハンバーガーメニューボタン"><span></span></label></a>
+        <a href="#modal_ham_nav" class="modal_menu-btn"></a>
         <div id="modal_ham_nav">
           <div class="modal_ham_nav_box">
             <a href="#" class="close"></a>
             <div class="modal_ham_nav_content">
+              <details class="nav_setumei">
+                <summary>ユーザビリティ（開く）</summary>
+                <p>この画面では、様々なページのセクションにほぼスクロールすることなく、簡単に飛ぶ事ができます。</p>
+              </details>
               <nav class="header__nav nav">
                 <ul class="nav__items nav-items" id="NavReload">
                   <li><a href="#">一番上へ↑</a></li>
@@ -46,7 +50,8 @@
       </div>
     </header>
     <div id="loading">
-      <div class="load_content">みすぼらしい画面消去中。。。少々お待ちください。</div>
+      <div class="load_content"><img src="../SystemFolder/IconData/avater.jpg" alt="ローディング画像" class="avater_image" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></div>
+      <div  style="margin: 10px;" class="load_content">みすぼらしい画面消去中。。。少々お待ちください。</div>
     </div>
     <div class="show">
       <strong>PusyuuWorld</strong>
@@ -203,9 +208,11 @@
         <section class="section" id="p5">
           <h2>ニュース</h2>
             <h3>更新情報</h3>
-              <marquee style="border: 1px solid #fff; background-color: rgba(0,0,0,0.4); color: #fff;" scrollamount="4">このバージョンでは、ハンバーガーメニューをモーダルシステムへ変更、ナビリロード廃止、スムーズスクロールを有効化しました、英文折り返さない問題をバグを修正、このページのバージョン23.7</marquee>
+              <marquee style="border: 1px solid #fff; background-color: rgba(0,0,0,0.4); color: #fff;" scrollamount="4">このバージョンでは、ハンバーガーメニューのデザインを変更、ローリング画面を少々変更、アクセシビリティ項目を復元、ソースコードのバグを修正、このページのバージョン23.8</marquee>
             <h3>更新履歴</h3>
               <div class="box-8">
+                <hr>
+                <p><time datetime="2023-04-03">2023.04.03</time><br>ハンバーガーメニューをモーダルシステムへ変更、ナビリロード廃止、スムーズスクロールを有効化しました、英文折り返さない問題をバグを修正、等をしました。当時のバージョン23.7</p>
                 <hr>
                 <p><time datetime="2023-03-29">2023.03.29</time><br>ニュース情報更新、プシューの部屋にコンテンツを追加、少々バグ修正、等をしました。当時のバージョン23.6</p>
                 <hr>
