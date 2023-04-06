@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 
 body {
-  background-image: url("5.jpg");
+  background-image: url("4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 12.9       |
+  |  ThisStyleVersion: 13.0       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-05       |
+  |  LastUpdate: 2023-04-06       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -445,7 +445,7 @@ td {
   //margin-top: 0px;
   margin-left: 250px;
   //margin-right: 150px;
-  background-color: rgba(225,225,225,0.0);
+  background-color: rgba(0,0,0,0.4);
   word-break: break-all;
   height: auto;
   padding: 10px;
@@ -813,6 +813,7 @@ ul li a {
   text-decoration: none;
   color: #fff000;
   transition: color;
+  padding: 3px;
 }
 
 ul li.current{
@@ -826,7 +827,6 @@ ul li.current a {
 ul li a:hover {
   border: 1px solid #00ff00;
   color: #fff;
-  padding: 3px;
 }
 
 /* sm tb版 レスポンシブ化調整部
