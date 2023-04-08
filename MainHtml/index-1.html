@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,9 @@
   <script src="../SystemFolder/JsData/Script.js" type="text/javascript" charset="UTF-8"></script>
   <!--
       *----------------------------------
-      |  ThisPageVersion: 23.8        |
+      |  ThisPageVersion: 24.0        |
       |  © 2021-2023 By Pusyuu        |
-      |  LastUpdate: 2023-04-04       |
+      |  LastUpdate: 2023-04-09       |
       |  ・。・プシューページ㌨       |
     ----------------------------------*
     -->
@@ -27,7 +27,7 @@
         <a href="#modal_ham_nav" class="modal_menu-btn"></a>
         <div id="modal_ham_nav">
           <div class="modal_ham_nav_box">
-            <a href="#" class="close"></a>
+            <a id="pham" href="#pham" class="close"></a>
             <div class="modal_ham_nav_content">
               <details class="nav_setumei">
                 <summary>ユーザビリティ（開く）</summary>
@@ -207,25 +207,42 @@
         </section>
         <section class="section" id="p5">
           <h2>ニュース</h2>
-            <h3>更新情報</h3>
-              <marquee style="border: 1px solid #fff; background-color: rgba(0,0,0,0.4); color: #fff;" scrollamount="4">このバージョンでは、ハンバーガーメニューのデザインを変更、ローリング画面を少々変更、アクセシビリティ項目を復元、ソースコードのバグを修正、追記（ハンバーガーメニューのボーダーはみ出る問題の修正をしました修正日2023.04.05）このページのバージョン23.8</marquee>
-            <h3>更新履歴</h3>
-              <div class="box-8">
-                <hr>
-                <p><time datetime="2023-04-03">2023.04.03</time><br>ハンバーガーメニューをモーダルシステムへ変更、ナビリロード廃止、スムーズスクロールを有効化しました、英文折り返さない問題をバグを修正、等をしました。当時のバージョン23.7</p>
-                <hr>
-                <p><time datetime="2023-03-29">2023.03.29</time><br>ニュース情報更新、プシューの部屋にコンテンツを追加、少々バグ修正、等をしました。当時のバージョン23.6</p>
-                <hr>
-                <p><time datetime="2023-03-28">2023.03.28</time><br>ニュース情報更新、プシューログの追加、少々コンテンツ周りのデザインを変更、余分な要素の削除、等をしました。当時のバージョン23.5</p>
-                <hr>
-                <p><time datetime="2023-03-26">2023.03.26</time><br>ニュース情報を更新、デザイン変更、バグ修正などを行いました。当時のバージョン23.4</p>
-                <hr>
-                <p><time datetime="2023-03-24">2023.03.24</time><br>問い合わせフォームの名前欄をアルファベット入力のみに変更、更新履歴欄を更に見やすく変更、少々デザイン変更、バグ修正などを行いました。当時のバージョン23.3</p>
-                <hr>
-                <p><time datetime="2023-03-23">2023.03.23</time><br>更新履歴の項目を追加、少々デザイン変更、などを行いました。当時のバージョン23.2</p>
-                <hr>
-                <p><time datetime="2023-03-19">2023.03.19</time><br>入れ子情報を再修正やバグ修正を行いました。当時のバージョン23.1</p>
-                <hr>
+            <h3>アップデート情報</h3>
+              <marquee style="border: 1px solid #fff; background-color: rgba(0,0,0,0.4); color: #fff;" scrollamount="4">このバージョンでは、ハンバーガーメニューのバグをさらに修正、更新履歴をアップデート履歴へ変更、アップデート履歴のデザイン変更、等をしました。このページのバージョン24.0</marquee>
+            <h3>アップデート履歴</h3>
+              <div class="update_log_box">
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-04-03">2023.04.03</time>
+                  <p class="update_log_content_box">このバージョンでは、ハンバーガーメニューのデザインを変更、ローリング画面を少々変更、アクセシビリティ項目を復元、ソースコードのバグを修正、等をしました。追記（ハンバーガーメニューのボーダーはみ出る問題の修正をしました修正日2023.04.05）。当時のバージョン23.8to23.9</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-04-03">2023.04.03</time>
+                  <p class="update_log_content_box">ハンバーガーメニューをモーダルシステムへ変更、ナビリロード廃止、スムーズスクロールを有効化しました、英文折り返さない問題をバグを修正、等をしました。当時のバージョン23.7</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-03-29">2023.03.29</time>
+                  <p class="update_log_content_box">ニュース情報更新、プシューの部屋にコンテンツを追加、少々バグ修正、等をしました。当時のバージョン23.6</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-03-28">2023.03.28</time>
+                  <p class="update_log_content_box">ニュース情報更新、プシューログの追加、少々コンテンツ周りのデザインを変更、余分な要素の削除、等をしました。当時のバージョン23.5</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-03-26">2023.03.26</time>
+                  <p class="update_log_content_box">ニュース情報を更新、デザイン変更、バグ修正などを行いました。当時のバージョン23.4</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-03-24">2023.03.24</time>
+                  <p class="update_log_content_box">問い合わせフォームの名前欄をアルファベット入力のみに変更、更新履歴欄を更に見やすく変更、少々デザイン変更、バグ修正などを行いました。当時のバージョン23.3</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-03-23">2023.03.23</time>
+                  <p class="update_log_content_box">更新履歴の項目を追加、少々デザイン変更、などを行いました。当時のバージョン23.2</p>
+                </div>
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-03-19">2023.03.19</time>
+                  <p class="update_log_content_box">入れ子情報を再修正やバグ修正を行いました。当時のバージョン23.1</p>
+                </div>
               </div>
             <h3>ニコニコ動画始めました！！</h3>
               <p>ニコニコ動画では今まで動画としてこのウェブサイトに貼ってあった動画や、</p>
