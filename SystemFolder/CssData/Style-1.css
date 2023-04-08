@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 13.0       |
+  |  ThisStyleVersion: 13.1       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-06       |
+  |  LastUpdate: 2023-04-09       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -660,6 +660,32 @@ textarea {
   margin: 0;
 }
 
+/* アップデート記録調整部
+-----------------------------------------------------------------*/
+
+.update_log_box {
+  padding: 15px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(120,220,0,0.3);
+  border-radius: 2px;
+}
+
+.update_log_child_box {
+  padding-top: 5px;
+  border-bottom: 2px solid #aaa;
+}
+
+.update_log_time_box {
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 5px;
+}
+
+.update_log_content_box {
+  
+}
+
 /* フォトフレーム調整部
 -----------------------------------------------------------------*/
 
@@ -882,6 +908,7 @@ ul li a:hover {
   border: 1px solid #00ffff;
   padding: 5px;
   display: inline-block;
+  overflow: scroll;
 }
 
 #modal_ham_nav ul {
