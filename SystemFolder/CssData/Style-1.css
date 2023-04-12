@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 13.1       |
+  |  ThisStyleVersion: 13.2       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-09       |
+  |  LastUpdate: 2023-04-12       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -31,13 +31,13 @@ html {
   background-color: rgba(10,255,10,0.5);
 }
 
-h1 {color: #7fffd4;}
+h1 {color: #00ff7f;}
 //h2 {color: #ffffff;}
-h3 {color: #00ffff;}
+h3 {color: #80ff00;}
 h4 {color: #6699ff;}
 p  {color: #ffffff;}
-th {color: #00ff00;}
-td {color: #00ff00;}
+th {color: #ffffff;}
+td {color: #ffffff;}
 li {color: #FFFFFF;}
 
 button {
@@ -61,25 +61,25 @@ a:hover {
   color: #ff5500;
 }
 
-h2 {
+//h2 {
   color: #77ff33;
   padding:5px;
   border-bottom: 1px solid #993300;
   border-left: 3px solid #ff4dff;
 }
 
-//h2 {
-  background: -webkit-linear-gradient(left, #ff00ff, #00ff00);
+h2 {
+  background: -webkit-linear-gradient(left, #00ffff, #00ff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-//h2:after {
+h2:after {
   content: "";
   display: block;
   width: 100%; height: 2px;
-  background-image: -webkit-linear-gradient(left, #ff00ff, #00ff00);
-  background-image: -ms-linear-gradient(left, #ff00ff, #00ff00);
+  background-image: -webkit-linear-gradient(left, #00ffff, #00ff00);
+  background-image: -ms-linear-gradient(left, #00ffff, #00ff00);
 }
 
 //h2 {
@@ -206,20 +206,20 @@ opacity: 1;
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 th {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 5px;
 }
 
 tr {
-  border: 1px ridge;
+  border: 1px ridge #cccccc;
 }
 
 td {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 5px;
 }
 
@@ -445,7 +445,7 @@ td {
   //margin-top: 0px;
   margin-left: 250px;
   //margin-right: 150px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.6);
   word-break: break-all;
   height: auto;
   padding: 10px;
@@ -586,12 +586,11 @@ textarea {
 }
 
 .service_card_time {
-  color: #ccc;
+  color: #ffaa00;
 }
 
 .service_card_headline {
   margin: 0;
-  color: #bbff99;
 }
 
 .service_card_description {
@@ -648,12 +647,11 @@ textarea {
 }
 
 .blog_card_time {
-  color: #ccc;
+  color: #ffaa00;
 }
 
 .blog_card_headline {
   margin: 0;
-  color: #bbff99;
 }
 
 .blog_card_description {
@@ -663,23 +661,30 @@ textarea {
 /* アップデート記録調整部
 -----------------------------------------------------------------*/
 
+:root {
+  --update_log_child_time_color: #00aaff;
+}
+
 .update_log_box {
   padding: 15px;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  background-color: rgba(120,220,0,0.3);
+  background-color: rgba(50,50,100,0.3);
   border-radius: 2px;
 }
 
 .update_log_child_box {
   padding-top: 5px;
-  border-bottom: 2px solid #aaa;
+  border-top: 2px solid var(--update_log_child_time_color);
 }
 
 .update_log_time_box {
   background-color: rgba(0,0,0,0.5);
-  color: #fff;
+  color: #ffaa00;
   padding: 5px;
+  border-bottom: 2px solid var(--update_log_child_time_color);
+  border-left: 2px solid var(--update_log_child_time_color);
+  border-right: 2px solid var(--update_log_child_time_color);
 }
 
 .update_log_content_box {
