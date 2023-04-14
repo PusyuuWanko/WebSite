@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 
 body {
-  background-image: url("4.jpg");
+  background-image: url("5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 13.2       |
+  |  ThisStyleVersion: 13.4       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-12       |
+  |  LastUpdate: 2023-04-14       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -41,15 +41,19 @@ td {color: #ffffff;}
 li {color: #FFFFFF;}
 
 button {
-  border-radius: 5px;
+  border-radius: 3px;
+  border-width: 0;
   padding: 5px;
   color: #000;
   background: #00d5ff;
+  box-shadow: 5px 5px 0 #000;
+  transition: box-shadow .0.3s
   transition: background 0.3s;
   transition: color 0.3s;
 }
 button:hover {
   color: #fff;
+  box-shadow: 0 0 0 rgba(0,0,0,0.0);
   background: #00aacc;
 }
 
@@ -206,20 +210,20 @@ opacity: 1;
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid #cccccc;
+  border: 1px solid #0055ff;
 }
 
 th {
-  border: 1px solid #cccccc;
+  border: 1px solid #0055ff;
   padding: 5px;
 }
 
 tr {
-  border: 1px ridge #cccccc;
+  border: 1px ridge #0055ff;
 }
 
 td {
-  border: 1px solid #cccccc;
+  border: 1px solid #0055ff;
   padding: 5px;
 }
 
@@ -272,6 +276,7 @@ td {
   top: 0;
   left: 0;
   z-index: 9999;
+  overflow: scroll;
 }
 
 .loaded {
@@ -282,7 +287,7 @@ td {
 .load_content {
   display: flex;
   justify-content: center;
-  margin-top: 350px;
+  margin-top: 40vh;
 }
 
 /* SHOW調整部 
@@ -445,7 +450,7 @@ td {
   //margin-top: 0px;
   margin-left: 250px;
   //margin-right: 150px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.0);
   word-break: break-all;
   height: auto;
   padding: 10px;
