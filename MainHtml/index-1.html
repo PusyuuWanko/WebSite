@@ -9,9 +9,9 @@
   <script src="../SystemFolder/JsData/Script.js" type="text/javascript" charset="UTF-8"></script>
   <!--
       *----------------------------------
-      |  ThisPageVersion: 24.1        |
+      |  ThisPageVersion: 24.2        |
       |  © 2021-2023 By Pusyuu        |
-      |  LastUpdate: 2023-04-12       |
+      |  LastUpdate: 2023-04-14       |
       |  ・。・プシューページ㌨       |
     ----------------------------------*
     -->
@@ -50,8 +50,32 @@
       </div>
     </header>
     <div id="loading">
-      <div class="load_content"><img src="../SystemFolder/IconData/avater.jpg" alt="ローディング画像" class="avater_image" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;"></div>
-      <div  style="margin: 10px;" class="load_content">みすぼらしい画面消去中。。。少々お待ちください。</div>
+      <div class="load_content">
+        <img src="../SystemFolder/IconData/avater.jpg" alt="ローディング画像" class="avater_image" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+      </div>
+      <div style="margin: 10px;" class="load_content">
+        みすぼらしい画面消去中。。。少々お待ちください。
+      </div>
+      <div style="margin: 10px;" class="load_content">
+        <details class="nav_setumei, center">
+          <summary>（ヘルプ）画面が自動的に切り替わりませんか？</summary>
+          <div class="box-6">
+            <p>次の可能性が考えられます。</p>
+            <div class="box-7">
+              <li>このページとの互換性がブラウザに無い↓</li>
+              <p>新しいバージョンのブラウザにアップデートするか別のブラウザで開いてください。<p>
+            </div>
+            <div class="box-7">
+              <li>途中でキャッシュが削除され、ループ状態になっている↓</li>
+              <p>このページをリロードしてみてください。</p>
+            </div>
+            <div class="box-7">
+              <li>JavaScriptが無効になっている↓</li>
+              <p>ブラウザ設定で有効になっているか確認してみてください。</p>
+            </div>
+          </div>
+        </details>
+      </div>
     </div>
     <div class="show">
       <strong>PusyuuWorld</strong>
@@ -208,9 +232,13 @@
         <section class="section" id="p5">
           <h2>ニュース</h2>
             <h3>アップデート情報</h3>
-              <marquee style="border: 1px solid #fff; background-color: rgba(0,0,0,0.4); color: #fff;" scrollamount="4">このバージョンでは、ハンバーガーメニューのバグをさらに修正、更にアップデート履歴のデザイン変更、等をしました。このページのバージョン24.1</marquee>
+              <marquee style="border: 1px solid #fff; background-color: rgba(0,0,0,0.4); color: #fff;" scrollamount="4">このバージョンでは、ページ全体のデザインを変更、みすぼらしい画面消去部分にヘルプを追加、アップデート履歴を短縮化、このページのバージョン24.3～24.4</marquee>
             <h3>アップデート履歴</h3>
               <div class="update_log_box">
+                <div class="update_log_child_box">
+                  <time class="update_log_time_box" datetime="2023-04-12">2023.04.12</time>
+                  <p class="update_log_content_box">ハンバーガーメニューのバグをさらに修正、更にアップデート履歴のデザイン変更、等をしました。当時のバージョン24.1</p>
+                </div>
                 <div class="update_log_child_box">
                   <time class="update_log_time_box" datetime="2023-04-09">2023.04.09</time>
                   <p class="update_log_content_box">ハンバーガーメニューのバグをさらに修正、更新履歴をアップデート履歴へ変更、アップデート履歴のデザイン変更、等をしました。当時のバージョン24.0</p>
@@ -219,34 +247,9 @@
                   <time class="update_log_time_box" datetime="2023-04-05">2023.04.05</time>
                   <p class="update_log_content_box">このバージョンでは、ハンバーガーメニューのデザインを変更、ローリング画面を少々変更、アクセシビリティ項目を復元、ソースコードのバグを修正、等をしました。追記（ハンバーガーメニューのボーダーはみ出る問題の修正をしました修正日2023.04.05）。当時のバージョン23.8to23.9</p>
                 </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-04-03">2023.04.03</time>
-                  <p class="update_log_content_box">ハンバーガーメニューをモーダルシステムへ変更、ナビリロード廃止、スムーズスクロールを有効化しました、英文折り返さない問題をバグを修正、等をしました。当時のバージョン23.7</p>
-                </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-03-29">2023.03.29</time>
-                  <p class="update_log_content_box">ニュース情報更新、プシューの部屋にコンテンツを追加、少々バグ修正、等をしました。当時のバージョン23.6</p>
-                </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-03-28">2023.03.28</time>
-                  <p class="update_log_content_box">ニュース情報更新、プシューログの追加、少々コンテンツ周りのデザインを変更、余分な要素の削除、等をしました。当時のバージョン23.5</p>
-                </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-03-26">2023.03.26</time>
-                  <p class="update_log_content_box">ニュース情報を更新、デザイン変更、バグ修正などを行いました。当時のバージョン23.4</p>
-                </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-03-24">2023.03.24</time>
-                  <p class="update_log_content_box">問い合わせフォームの名前欄をアルファベット入力のみに変更、更新履歴欄を更に見やすく変更、少々デザイン変更、バグ修正などを行いました。当時のバージョン23.3</p>
-                </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-03-23">2023.03.23</time>
-                  <p class="update_log_content_box">更新履歴の項目を追加、少々デザイン変更、などを行いました。当時のバージョン23.2</p>
-                </div>
-                <div class="update_log_child_box">
-                  <time class="update_log_time_box" datetime="2023-03-19">2023.03.19</time>
-                  <p class="update_log_content_box">入れ子情報を再修正やバグ修正を行いました。当時のバージョン23.1</p>
-                </div>
+              </div>
+              <div style="margin-top: 10px;" class="center">
+                <button type="button" onclick="location.href='../SystemFolder/SubHtml/p-pusyuup_archive.html'">アップデート履歴をさらに見る</button>
               </div>
             <h3>ニコニコ動画始めました！！</h3>
               <p>ニコニコ動画では今まで動画としてこのウェブサイトに貼ってあった動画や、</p>
