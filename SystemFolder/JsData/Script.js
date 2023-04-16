@@ -1,8 +1,8 @@
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 0.9        |
+  |  ThisStyleVersion: 1.0        |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-03       |
+  |  LastUpdate: 2023-04-16       |
   |  (^U^)PusyuuJsDesu            |
 ----------------------------------*
 ******************************************/
@@ -128,9 +128,9 @@ const pusyuu = "あ、あ、テステス、テストコメントです。まだ�
 ---------------------------------*/
 
 window.onload = function() {
-    let my_audio = new Audio("../MusicData/pasuta.mp3");
+    const my_audio = new Audio("../MusicData/hage.mp3");
             //ボタンにクリックイベントを設定
-            document.getElementById("btn01").onclick = function() {
+            onclick = function() {
             my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
             my_audio.play();  //サウンドを再生
         }
