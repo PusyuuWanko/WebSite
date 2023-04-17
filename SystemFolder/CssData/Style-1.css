@@ -920,7 +920,6 @@ ul li a:hover {
   padding: 5px;
   display: inline-block;
   overflow: scroll;
-  transition: all 2s;
 }
 
 #modal_ham_nav ul {
