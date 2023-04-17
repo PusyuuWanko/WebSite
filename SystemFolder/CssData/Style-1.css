@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 13.5       |
+  |  ThisStyleVersion: 13.6       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-16       |
+  |  LastUpdate: 2023-04-17       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -268,8 +268,8 @@ td {
 -----------------------------------------------------------------*/
 
 #loading {
-  width: 100dvw;
-  height: 100dvh;
+  height: 100%;
+  width: 100%;
   transition: all 1s;
   background-color: #fff;
   position: fixed;
@@ -920,6 +920,7 @@ ul li a:hover {
   padding: 5px;
   display: inline-block;
   overflow: scroll;
+  transition: all 2s;
 }
 
 #modal_ham_nav ul {
