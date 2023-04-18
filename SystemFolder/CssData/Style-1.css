@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 
 body {
-  background-image: url("5.jpg");
+  background-image: url("4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 13.6       |
+  |  ThisStyleVersion: 13.7       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-17       |
+  |  LastUpdate: 2023-04-18       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -450,7 +450,7 @@ td {
   //margin-top: 0px;
   margin-left: 250px;
   //margin-right: 150px;
-  background-color: rgba(0,0,0,0.0);
+  background-color: rgba(0,0,0,0.5);
   word-break: break-all;
   height: auto;
   padding: 10px;
