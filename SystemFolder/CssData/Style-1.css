@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 13.7       |
+  |  ThisStyleVersion: 13.8       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-18       |
+  |  LastUpdate: 2023-04-20       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -65,19 +65,11 @@ a:hover {
   color: #ff5500;
 }
 
-//h2 {
-  color: #77ff33;
-  padding:5px;
-  border-bottom: 1px solid #993300;
-  border-left: 3px solid #ff4dff;
-}
-
 h2 {
   background: -webkit-linear-gradient(left, #00ffff, #00ff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 h2:after {
   content: "";
   display: block;
@@ -208,7 +200,8 @@ opacity: 1;
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-radius: 2px;
   border-spacing: 0;
   border: 1px solid #0055ff;
 }
@@ -913,10 +906,13 @@ ul li a:hover {
 #modal_ham_nav .modal_ham_nav_content {
   position: relative;
   background-color: rgba(100,150,150,0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   cursor: default;
   width: 80vw;
   height: 80vh;
   border: 1px solid #00ffff;
+  border-radius: 2px;
   padding: 5px;
   display: inline-block;
   overflow: scroll;
@@ -947,8 +943,6 @@ ul li a:hover {
 #modal_ham_nav .modal_ham_nav_box::before {
   content: "";
   background-color: rgba(0,0,0,0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
@@ -1004,8 +998,8 @@ ul li a:hover {
   right: 0;
   height: 55px;
   width: auto;
-  background-color: rgba(255,255,255,0.6);
-  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 5px 20px rgba(100, 255, 255, 0.0);
   //border-radius:15px;
   //overflow: hidden;
 }
