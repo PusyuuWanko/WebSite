@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 14.0       |
+  |  ThisStyleVersion: 14.1       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-28       |
+  |  LastUpdate: 2023-04-29       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -520,7 +520,8 @@ td {
 
 .profile {
   background-color: rgba(50,50,50,0.5);
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.50);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   width: 50vw;
   padding: 10px;
   border-radius: 10px;
