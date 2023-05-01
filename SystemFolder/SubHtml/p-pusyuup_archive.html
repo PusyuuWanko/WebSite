@@ -9,9 +9,11 @@
 <body>
   <header class="header">
     <div class="header_nav">
-      <h1 class="header_logo"> <a href="#">
-          <img src="../IconData/logo-black.png" alt="ロゴ画像">
-        </a> </h1>
+      <h1 class="header_logo">
+        <a id="hlp" href="#hlp">
+          <img src="../IconData/logo-black.png" alt="ロゴ画像" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
+        </a>
+      </h1>
       <nav class="header__nav nav">
         <ul class="nav__items nav-items">
           <li class="current"><a href="./p-pusyuup_archive.html">現在のページ</a></li>
@@ -25,6 +27,10 @@
       <section class="section">
         <h2>アップデート履歴のアーカイブへようこそ</h2>
         <div class="update_log_box">
+          <div class="update_log_child_box">
+            <time class="update_log_time_box" datetime="2023-04-20">2023.04.20</time>
+            <p class="update_log_content_box">ハンバーガーメニューのブラーの位置修正やアニメーションの追加や角を丸くしました、テーブルタグの角を丸くしました。背景を2～3回変更しました。見出しのデザインを変更。等をしました。当時のバージョン24.7～24.9</p>
+          </div>
           <div class="update_log_child_box">
             <time class="update_log_time_box" datetime="2023-04-18">2023.04.18</time>
             <p class="update_log_content_box">ページ全体のデザインを変更、バグ修正、等をしました。当時のバージョン24.6</p>
