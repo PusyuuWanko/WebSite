@@ -108,6 +108,14 @@ a:hover {
   color: #00e600;
 }
 
+.article {
+  margin: 10px;
+  width: 80%;
+  height: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
 /* プロフィール調整部
 ---------------------------------*/
 
