@@ -13,9 +13,9 @@ body {
 
 /*****************************************
   *----------------------------------
-  |  ThisStyleVersion: 14.1       |
+  |  ThisStyleVersion: 14.3       |
   |  © 2021-2023 By Pusyuu        |
-  |  LastUpdate: 2023-04-29       |
+  |  LastUpdate: 2023-05-07       |
   |  ・。・ﾌﾟｼｭｰ㌨？・・・        |
 ----------------------------------*
 ******************************************/
@@ -81,6 +81,7 @@ a:hover {
 h2 {
   background-image: url("../ImageData/green0074.png");
   background-size: cover;
+  //background: radial-gradient(circle at left, #00ff00 0%, #00ffff 100%);
   background-repeat: no-repeat;
   background-position: center;
   padding: 5px;
@@ -317,7 +318,7 @@ td {
   color: #fff;
   font-weight: bold;
   display: block;
-  width: 100%;
+  width: 70%;
   text-align: center;
 }
 
